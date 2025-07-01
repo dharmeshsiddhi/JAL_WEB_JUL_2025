@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #94e7ef;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #413d4a;
+      }
+
+      .cls-2 {
+        fill: #9b8ccc;
+      }
+
+      .cls-3 {
+        fill: #413d4a;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Icon" transform="translate(0.001 0)">
+    <g id="Rectangle_150" data-name="Rectangle 150" class="cls-1" transform="translate(0 0)">
+      <rect class="cls-4" width="14" height="23" rx="2"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="13" height="22" rx="1.5"/>
+    </g>
+    <g id="Rectangle_151" data-name="Rectangle 151" class="cls-2" transform="translate(0 0)">
+      <path class="cls-4" d="M2,0H12a2,2,0,0,1,2,2V4a0,0,0,0,1,0,0H0A0,0,0,0,1,0,4V2A2,2,0,0,1,2,0Z"/>
+      <path class="cls-5" d="M2,.5H12A1.5,1.5,0,0,1,13.5,2V3a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,3V2A1.5,1.5,0,0,1,2,.5Z"/>
+    </g>
+    <g id="Rectangle_152" data-name="Rectangle 152" class="cls-2" transform="translate(14 23) rotate(180)">
+      <path class="cls-4" d="M2,0H12a2,2,0,0,1,2,2V5a0,0,0,0,1,0,0H0A0,0,0,0,1,0,5V2A2,2,0,0,1,2,0Z"/>
+      <path class="cls-5" d="M2,.5H12A1.5,1.5,0,0,1,13.5,2V4a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,4V2A1.5,1.5,0,0,1,2,.5Z"/>
+    </g>
+    <path id="Path_365" data-name="Path 365" class="cls-3" d="M137.438,452h-.958a.479.479,0,0,0,0,.958h.958a.479.479,0,0,0,0-.958Z" transform="translate(-130.25 -432.342)"/>
+  </g>
+</svg>

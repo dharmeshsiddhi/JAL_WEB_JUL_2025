@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+/* Mechanic Visitor Counter Version 3.0 Default styles*/
+#educmsvcwid{
+	background-color:none;
+	width:100%;
+	padding:10px;
+}
+#educmsvccount{
+	padding:10px;
+}
+#educmsvccount img{
+	margin-right:5px;
+}
+#educmsvctable{
+	padding:10px;
+}
+#educmsvctable table tr td{
+	width:100%;
+}
+#educmsvcip{
+	padding:10px;
+	border-top:1px dashed #bcbcb0; 
+}
+#educmsvcserver{
+	padding:10px;
+	border-top:1px dashed #bcbcb0;
+}
+#mvccredit{
+	padding:10px;
+	border-top:1px dashed #bcbcb0;
+}

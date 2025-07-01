@@ -1,0 +1,4 @@
+[20-Feb-2024 10:37:00 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::cctns() in /home/stest2019/jalpolice.ssstest.in/app/Http/Controllers/HomeController.php on line 61
+[20-Feb-2024 10:45:03 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::cctns() in /home/stest2019/jalpolice.ssstest.in/app/Http/Controllers/HomeController.php on line 61
+[20-Feb-2024 10:46:16 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::cctns() in /home/stest2019/jalpolice.ssstest.in/app/Http/Controllers/HomeController.php on line 61
+[20-Feb-2024 10:46:17 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::cctns() in /home/stest2019/jalpolice.ssstest.in/app/Http/Controllers/HomeController.php on line 61
