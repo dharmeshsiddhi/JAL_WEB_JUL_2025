@@ -67,13 +67,15 @@ class NewsController extends SettingController {
         
         $masterModel = new MasterModel();
 
+        $data['year'] = request()->get('formYearId');
+
         $rowPerPage = 10;
         $page = 0;
         $rowStart = $rowPerPage * $page;
 
         $newsList = $masterModel->getAllActiveNewsList();
 		$data['stationList'] = $masterModel->getAllActivePoliceStationsList();
-		$recruitmentList = $masterModel->getAllActiveRecruitmentListPaging($rowPerPage);
+		$recruitmentList = $masterModel->getAllActiveRecruitmentListPaging($rowPerPage,$data);
         $lastDate = $this->getWebsiteLastUpdatedDate();
         session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
         //echo "<pre>";print_r($recruitmentList);exit;
@@ -92,6 +94,7 @@ class NewsController extends SettingController {
         $masterModel = new MasterModel();
 
         $page = request()->query('page');
+        $data['year'] = request()->get('formYearId');
 
         $rowPerPage = 10;
         if($page > 0){
@@ -101,7 +104,7 @@ class NewsController extends SettingController {
             $rowStart = $rowPerPage * $page;
         }
         
-		$recruitmentList = $masterModel->getAllActiveRecruitmentListPaging($rowPerPage);
+		$recruitmentList = $masterModel->getAllActiveRecruitmentListPaging($rowPerPage,$data);
 
 		return view("pages/recruitment_list_paging", compact('recruitmentList','rowStart'));
     }

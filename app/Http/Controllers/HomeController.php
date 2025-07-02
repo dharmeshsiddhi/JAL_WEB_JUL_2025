@@ -457,47 +457,50 @@ class HomeController extends SettingController {
 		return view("pages/contactus", compact('data','newsList','officerList','stationList','dView'));
     }
     
-     public function scstact() {
-        $data['title'] = "Home";
-        $data['segment1'] = Request::segment(1);
-        $data['segment2'] = "//";
-        
-        $masterModel = new MasterModel();
-        
-        $rowPerPage = 10;
-        $page = 0;
-        $rowStart = $rowPerPage * $page;
+        public function scstact() {
+            $data['title'] = "Home";
+            $data['segment1'] = Request::segment(1);
+            $data['segment2'] = "//";
+            
+            $masterModel = new MasterModel();
 
-        $newsList = $masterModel->getAllActiveNewsList();
-		$data['stationList'] = $masterModel->getAllActivePoliceStationsList();
-		$scstactList = $masterModel->getAllScStActListPaging($rowPerPage);
-        $lastDate = $this->getWebsiteLastUpdatedDate();
-        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
-
-        $mainId = DB::table('visitor_counter')
-                ->insertGetId([
-                    'VCTR_IP' => request()->ip(),
-                    'VCTR_Added_Date' => date("Y-m-d H:i:s")
-                ]);
-        session(['SID_JAL_WEB_VISITOR' => $mainId]);
-
-		return view("pages/scstact", compact('data','newsList','scstactList','rowStart'));
-    }
-    
-    public function scstactPaging() {
-        $masterModel = new MasterModel();
-
-        $page = request()->query('page');
-
-        $rowPerPage = 10;
-        if($page > 0){
-            $page = $page - 1;
+            $data['year'] = request()->get('formYearId');
+            
+            $rowPerPage = 10;
+            $page = 0;
             $rowStart = $rowPerPage * $page;
-        } else {
-            $rowStart = $rowPerPage * $page;
+
+            $newsList = $masterModel->getAllActiveNewsList();
+            $data['stationList'] = $masterModel->getAllActivePoliceStationsList();
+            $scstactList = $masterModel->getAllScStActListPaging($rowPerPage,$data);
+            $lastDate = $this->getWebsiteLastUpdatedDate();
+            session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+
+            $mainId = DB::table('visitor_counter')
+                    ->insertGetId([
+                        'VCTR_IP' => request()->ip(),
+                        'VCTR_Added_Date' => date("Y-m-d H:i:s")
+                    ]);
+            session(['SID_JAL_WEB_VISITOR' => $mainId]);
+
+            return view("pages/scstact", compact('data','newsList','scstactList','rowStart'));
         }
         
-		$scstactList = $masterModel->getAllScStActListPaging($rowPerPage);
+        public function scstactPaging() {
+            $masterModel = new MasterModel();
+
+            $page = request()->query('page');
+            $data['year'] = request()->get('formYearId');
+
+            $rowPerPage = 10;
+            if($page > 0){
+                $page = $page - 1;
+                $rowStart = $rowPerPage * $page;
+            } else {
+                $rowStart = $rowPerPage * $page;
+            }
+            
+            $scstactList = $masterModel->getAllScStActListPaging($rowPerPage,$data);
 
 		return view("pages/scstact_paging", compact('scstactList','rowStart'));
     }

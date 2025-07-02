@@ -7,58 +7,42 @@
             <h2 class="section__titletext" style="color: rgb(10, 36, 99);">Recruitment</h2>
             <hr class="section__titlehr" style="background-color: rgb(10, 36, 99);">
         </div>
+        <form id="form1">
+            <div class="row mx-0">
+                <div class="col-md-4"></div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>{{ __('PRESS_PAGE_FORM_YEAR_LABEL') }} :</label>
+                        <div class="rightNavDropdown" data-aos="fade-left">
+                            <select class="home-ds-select col6" id="formYearId" name="formYearId">
+                                <option value="" title="{{ __('PRESS_PAGE_FORM_YEAR_SELECT') }}">{{ __('PRESS_PAGE_FORM_YEAR_SELECT') }}</option>
+                                <?php for ($year=2023; $year <= date('Y)'); $year++): ?>
+                                    <option value="<?php echo $year;?>"><?php echo $year;?></option>
+                                <?php endfor; ?>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label>&nbsp;</label>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mt-2" style="padding:15px;" onclick="searchRecruitmentList()"><i class="fa fa-search mr-2"></i>{{ __('PRESS_PAGE_FORM_BUTTON') }}</button>
+                </div>
+                <div class="col-md-12"><hr></div>
+            </div>
+        </form>
         @if(count($recruitmentList))
             <div class="row mx-0">
                 <div class="col-md-1"></div>
                 <form id="form1"></form>
                 <div class="col-md-10" id="ajaxResponseData" style="overflow-x:auto;">
-                    <!-- <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>From Date :</label>
-                                <input
-                                    type="tel"
-                                    class="form-control form-control-sm"
-                                    id="us_date1"
-                                    name="us_date1"
-                                    placeholder="DD-MM-YYYY"
-                                    onkeypress="return handle1(event, 'us_name');"
-                                    tabindex="1"
-                                    readonly = "readonly" 
-                                    value="{{ date('d-m-Y', strtotime('-1 month', strtotime(date('d-m-Y')))) }}"
-                                />
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>To Date :</label>
-                                <input
-                                    type="tel"
-                                    class="form-control form-control-sm"
-                                    id="us_date2"
-                                    name="us_date2"
-                                    placeholder="DD-MM-YYYY"
-                                    onkeypress="return handle1(event, 'us_name');"
-                                    tabindex="1"
-                                    readonly = "readonly" 
-                                    value="{{ date('d-m-Y') }}"
-                                />
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <label>&nbsp;</label>
-                            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="openCustomModal()"><i class="fa fa-search mr-2"></i>View</button>
-                        </div>
-                        <div class="col-md-12"><hr></div>
-                    </div> -->
                     <table class="table table-hover table-bordered table-responsive-md mt-10">
                         <thead>
                             <tr>
                                 <th scope="col" width="5%">#</th>
-                                <th scope="col" width="70%">TITLE</th>
-                                <th scope="col" width="15%">DOWNLOAD</th>
-                                <th scope="col" width="10%">VIEW</th>
+                                <th scope="col" width="11%">{{ __('PRESS_PAGE_TABLE_DATE') }}</th>
+                                <th scope="col" width="55%">{{ __('PRESS_PAGE_TABLE_TITLE') }}</th>
+                                <th scope="col" width="15%">{{ __('PRESS_PAGE_TABLE_DOWNLOAD') }}</th>
+                                <th scope="col" width="15%">{{ __('PRESS_PAGE_TABLE_VIEW') }}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -66,9 +50,10 @@
                                 @foreach($recruitmentList as $detail)
                                     <tr>
                                         <td class="v-center">{{ $rowStart + $loop->iteration }}</td>
+                                        <td class="v-center">{{ date('d-m-Y', strtotime($detail->MRCT_Date)) }}</td>
                                         <td class="v-center">{{ $detail->MRCT_Title }}</td>
-                                        <td><a target="_blank" rel="noopener noreferrer" href="https://panel.jalgaonpolice.gov.in/{{ $detail->MRCT_Link }}" class="btn btn-danger btn-lg btn-block"><i class="fa fa-file-pdf-o mr-2"></i>Download</a></td>
-                                        <td><button type="button" class="btn btn-danger btn-lg btn-block" onclick="openCustomModal('Recruitment','https://panel.jalgaonpolice.gov.in/{{ $detail->MRCT_Link }}')"><i class="fa fa-eye mr-2"></i>View</button></td>
+                                        <td><a target="_blank" rel="noopener noreferrer" href="https://panel.jalgaonpolice.gov.in/{{ $detail->MRCT_Link }}" class="btn btn-danger btn-lg btn-block"><i class="fa fa-file-pdf-o mr-2"></i>{{ __('PRESS_PAGE_TABLE_DOWNLOAD') }}</a></td>
+                                        <td><button type="button" class="btn btn-danger btn-lg btn-block" onclick="openCustomModal('Recruitment','https://panel.jalgaonpolice.gov.in/{{ $detail->MRCT_Link }}')"><i class="fa fa-eye mr-2"></i>{{ __('PRESS_PAGE_TABLE_VIEW') }}</button></td>
                                     </tr>
                                 @endforeach
                             @endif

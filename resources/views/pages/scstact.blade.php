@@ -7,6 +7,29 @@
             <h2 class="section__titletext" style="color: rgb(10, 36, 99);">{{ __('SHEDULE_PAGE_TITLE') }}</h2>
             <hr class="section__titlehr" style="background-color: rgb(10, 36, 99);">
         </div>
+        <form id="form1">
+            <div class="row mx-0">
+                <div class="col-md-4"></div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>{{ __('PRESS_PAGE_FORM_YEAR_LABEL') }} :</label>
+                        <div class="rightNavDropdown" data-aos="fade-left">
+                            <select class="home-ds-select col6" id="formYearId" name="formYearId">
+                                <option value="" title="{{ __('PRESS_PAGE_FORM_YEAR_SELECT') }}">{{ __('PRESS_PAGE_FORM_YEAR_SELECT') }}</option>
+                                <?php for ($year=2022; $year <= date('Y)'); $year++): ?>
+                                    <option value="<?php echo $year;?>"><?php echo $year;?></option>
+                                <?php endfor; ?>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label>&nbsp;</label>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mt-2" style="padding:15px;" onclick="searchSCActList()"><i class="fa fa-search mr-2"></i>{{ __('PRESS_PAGE_FORM_BUTTON') }}</button>
+                </div>
+                <div class="col-md-12"><hr></div>
+            </div>
+        </form>
        @if(count($scstactList))
             <div class="row mx-0">
                 <div class="col-md-1"></div>
@@ -49,7 +72,7 @@
                     <div role="alert" class="fade d-flex justify-content-between align-items-center alert alert-danger show">No Records Found!</div>
                 </div>
                 <div class="col"></div>
-	    </div>
+	        </div>
         @endif 
     </section>
     <div id="detailModal" class="modal">

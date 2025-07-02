@@ -1,3 +1,4 @@
+@if(count($scstactList))
     <table class="table table-hover table-bordered table-responsive-md">
         <thead>
             <tr>
@@ -25,3 +26,12 @@
     <div class="col-md-12 d-flex justify-content-center">
         {{ $scstactList->onEachSide(0)->links('layout.pagination') }}
     </div>
+@else
+    <div class="row mx-0">
+        <div class="col"></div>
+        <div class="col-md-6">
+            <div role="alert" class="fade d-flex justify-content-between align-items-center alert alert-danger show">No Records Found!</div>
+        </div>
+        <div class="col"></div>
+    </div>
+@endif

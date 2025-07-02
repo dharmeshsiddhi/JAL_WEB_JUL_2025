@@ -117,12 +117,16 @@ class MasterModel extends Model
             ->get();
     }
     
-    public function getAllScStActListPaging($rowPerPage) {
-        return DB::table('master_schedule_caste')
+    public function getAllScStActListPaging($rowPerPage,$data) {
+        $query = DB::table('master_schedule_caste')
             ->select('MSC_ID','MSC_Title','MSC_Year','MSC_Attach') 
-            ->where('MSC_Status', 1)
-            ->orderBy('MSC_Year', 'desc')
-            ->paginate($rowPerPage)->withPath('/scheduled-cast-tribe/ajax-paginate-scheduled-cast-tribe-list');
+            ->where('MSC_Status', 1);
+            if($data['year'] != '') {
+                $query->where('MSC_Year', $data['year']);
+            }
+            $query->orderBy('MSC_Year', 'desc');
+        $queryResult = $query->paginate($rowPerPage)->withPath('/scheduled-cast-tribe/ajax-paginate-scheduled-cast-tribe-list');
+        return $queryResult;
     }
     
     public function getDistinctBitListByStationId($id) {
@@ -152,12 +156,16 @@ class MasterModel extends Model
      * Created Date: 11 Feb 2024
      * Code For: this function is used for get active press list
      */
-    public function getAllActiveRecruitmentListPaging($rowPerPage) {
-        return DB::table('master_recruitment')
+    public function getAllActiveRecruitmentListPaging($rowPerPage,$data) {
+        $query = DB::table('master_recruitment')
             ->select('MRCT_ID','MRCT_Lang','MRCT_Title','MRCT_Type','MRCT_Link','MRCT_Date','MRCT_Status') 
-            ->where('MRCT_Status', 1)
-            ->orderBy('MRCT_Date', 'desc')
-            ->paginate($rowPerPage)->withPath('/recruitment/ajax-paginate-recruitment-list');
+            ->where('MRCT_Status', 1);
+            if($data['year'] != '') {
+                $query->whereYear('MRCT_Date', $data['year']);
+            }
+            $query->orderBy('MRCT_Date', 'desc');
+        $queryResult = $query->paginate($rowPerPage)->withPath('/recruitment/ajax-paginate-recruitment-list');
+        return $queryResult;
     }
     
     /**
