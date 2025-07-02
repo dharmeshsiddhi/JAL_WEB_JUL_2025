@@ -7,6 +7,7 @@ use App\Http\Controllers\SettingController;
 use App\Models\MasterModel;
 
 use Request;
+use DB;
 
 class NewsController extends SettingController {
 
