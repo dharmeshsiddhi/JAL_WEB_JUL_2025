@@ -58,6 +58,14 @@
             <h2 class="section__titletext" style="color: rgb(10, 36, 99);">{{ __('CONTACT_PAGE_TABLE_HEAD') }}</h2>
             <hr class="section__titlehr" style="background-color: rgb(10, 36, 99);">
         </div>
+    <form id="form1">
+        <div class="row mx-0">
+            <div class="col-md-9"></div>
+            <div class="col-md-2">
+                <a class="btn btn-primary btn-lg btn-block" style="padding:10px;" href="{{ URL::to('/pdf/generate-contact-list') }}" target="_blank"><i class="fa fa-file-pdf-o mr-2"></i>{{ __('PRESS_PAGE_TABLE_DOWNLOAD') }}</a>
+            </div>
+        </div>
+    </form>
         <div class="row mx-0">
             <form id="form1"></form>
             <div class="col-md-12" id="ajaxResponseData" style="overflow-x:auto;">

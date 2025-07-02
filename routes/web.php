@@ -12,6 +12,7 @@ use App\Http\Controllers\OfficerController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\StationController;
 use App\Http\Controllers\BlankController;
+use App\Http\Controllers\CommonController\PDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -116,3 +117,6 @@ Route::get('/useful-websites', [HomeController::class, 'usefulWebsites']);
 
 Route::get('/gradation-list', [HomeController::class, 'gradationList']);
 Route::post('/gradation-list/ajax-paginate-gradation-list', [HomeController::class, 'gradationListPaging']);
+
+
+Route::get('/pdf/generate-contact-list', [PDFController::class, 'printDownloadContactList']);
