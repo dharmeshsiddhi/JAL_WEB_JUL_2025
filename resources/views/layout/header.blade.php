@@ -210,6 +210,9 @@
                                                                     <li class="dropdown-item level-1">
                                                                         <a href="/recruitments" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_POLICE_CORNER_RECRUITMENT') }}</a>
                                                                     </li>
+                                                                    <li class="dropdown-item level-1">
+                                                                        <a href="/initiatives" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_POLICE_CORNER_INITIATIVES') }}</a>
+                                                                    </li>
                                                                 </ul>
                                                             </li>
                                                             <li class="nav-item level-0">
