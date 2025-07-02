@@ -244,12 +244,17 @@ class MasterModel extends Model
             ->get();
     }
     
-    public function getAllPhotoMainListPaging($rowPerPage) {
-        return DB::table('gallery_main')
-            ->select('GMN_ID','GMN_Title','GMN_Thumbnail_Path') 
-            ->where('GMN_Status', 1)
-            ->orderBy('GMN_ID', 'desc')
-            ->paginate($rowPerPage)->withPath('/photo-gallery/ajax-paginate-photo-gallery-list');
+    public function getAllPhotoMainListPaging($rowPerPage,$data) {
+        $query = DB::table('gallery_main')
+            ->join('master_year', 'gallery_main.GMN_Year_Id', '=', 'master_year.MYR_ID')
+            ->select('GMN_ID','GMN_Title','GMN_Thumbnail_Path','MYR_Name') 
+            ->where('GMN_Status', 1);
+            if($data['year'] != '') {
+                $query->where('GMN_Year_Id', $data['year']);
+            }
+            $query->orderBy('GMN_ID', 'desc');
+        $queryResult = $query->paginate($rowPerPage)->withPath('/photo-gallery/ajax-paginate-photo-gallery-list');
+        return $queryResult;
     }
     
     public function getAllActivePhotoSubListCountByMainId($id) {

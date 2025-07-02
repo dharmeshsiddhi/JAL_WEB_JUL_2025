@@ -628,6 +628,7 @@ class HomeController extends SettingController {
       $data['segment2'] = "//";
       
       $masterModel = new MasterModel();
+      $data['year'] = request()->get('formYearId');
       
       $rowPerPage = 8;
       $page = 0;
@@ -635,7 +636,9 @@ class HomeController extends SettingController {
 
       $data['stationList'] = $masterModel->getAllActivePoliceStationsList();
       $newsList = $masterModel->getAllActiveNewsList();
-      $galleryList = $masterModel->getAllPhotoMainListPaging($rowPerPage);
+      $yearList = $masterModel->getAllActiveYearList();
+
+      $galleryList = $masterModel->getAllPhotoMainListPaging($rowPerPage,$data);
      if(count($galleryList) > 0) {
         foreach($galleryList as $detail) {
             $detail->rowId = $this->enc_dec_key($detail->GMN_ID,'e');
@@ -651,13 +654,14 @@ class HomeController extends SettingController {
                     'VCTR_Added_Date' => date("Y-m-d H:i:s")
                 ]);
         session(['SID_JAL_WEB_VISITOR' => $mainId]);
-      return view("pages/photo_gallery_main", compact('data','newsList','galleryList','rowStart'));
+      return view("pages/photo_gallery_main", compact('data','newsList','galleryList','rowStart','yearList'));
   }
   
   public function photoGalleryPaging() {
       $masterModel = new MasterModel();
 
       $page = request()->query('page');
+      $data['year'] = request()->get('formYearId');
 
       $rowPerPage = 8;
       if($page > 0){
@@ -667,7 +671,7 @@ class HomeController extends SettingController {
           $rowStart = $rowPerPage * $page;
       }
       
-      $galleryList = $masterModel->getAllPhotoMainListPaging($rowPerPage);
+      $galleryList = $masterModel->getAllPhotoMainListPaging($rowPerPage,$data);
       if(count($galleryList) > 0) {
          foreach($galleryList as $detail) {
              $detail->count = $masterModel->getAllActivePhotoSubListCountByMainId($detail->GMN_ID);

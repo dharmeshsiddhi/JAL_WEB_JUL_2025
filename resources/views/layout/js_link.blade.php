@@ -1003,6 +1003,22 @@ function addAnimation() {
                         $("#ajaxResponseData").html('<div class="fade d-flex justify-content-between align-items-center alert alert-danger show">Network connection error</div>');
                     });
                 }
+                function searchGalleryMainList() {
+                    $('#ajaxResponseData').html('');
+                    let _token = $('meta[name="csrf-token"]').attr("content");
+                    $(".ajaxLoader").show();
+                    $.ajax({
+                        url: "/photo-gallery/ajax-paginate-photo-gallery-list",
+                        type:"POST",
+                        data: $("#form1").serialize() + "&_token=" + _token,
+                    }).done(function (response) {
+                        $(".ajaxLoader").hide();
+                        $("#ajaxResponseData").html(response);
+                    }).fail(function () {
+                        $(".ajaxLoader").hide();
+                        $("#ajaxResponseData").html('<div class="fade d-flex justify-content-between align-items-center alert alert-danger show">Network connection error</div>');
+                    });
+                }
             </script>
         </div>
     </body>

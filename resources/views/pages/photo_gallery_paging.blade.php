@@ -1,7 +1,8 @@
 @if(count($galleryList))
     @foreach($galleryList as $galDetail)
         <div class="col-md-3 col-sm-3 col-xs-12 mb-4">
-            <a class="Mp_card photoCat" href="{{ url('/photo-gallery/view-photo-gallery/'.$galDetail->rowId) }}" title="{{ $galDetail->GMN_Title }}">
+            <div class="ribbon-custom">{{ $galDetail->MYR_Name }}</div>
+                <a class="Mp_card photoCat" href="javascript:void(0)" title="{{ $galDetail->GMN_Title }}" onclick="getPhotoGallery('{{ $galDetail->GMN_ID }}')">
                 <img class="card__image" src="https://panel.jalgaonpolice.gov.in/{{ $galDetail->GMN_Thumbnail_Path }}" alt="Image of {{ $galDetail->GMN_Title }}" title="{{ $galDetail->GMN_Title }}">
                 <div class="card__overlay">
                     <div class="card__header">
