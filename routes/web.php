@@ -113,3 +113,6 @@ Route::get('/cyber-safety', [HomeController::class, 'cyberSafety']);
 Route::get('/women-safety', [HomeController::class, 'womenSafety']);
 Route::get('/anti-narcotics', [HomeController::class, 'antiNarcotics']);
 Route::get('/useful-websites', [HomeController::class, 'usefulWebsites']);
+
+Route::get('/gradation-list', [HomeController::class, 'gradationList']);
+Route::post('/gradation-list/ajax-paginate-gradation-list', [HomeController::class, 'gradationListPaging']);

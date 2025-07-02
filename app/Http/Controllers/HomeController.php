@@ -826,5 +826,55 @@ class HomeController extends SettingController {
         session(['SID_JAL_WEB_VISITOR' => $mainId]);
      return view("pages/useful_websites", compact('data','newsList'));
  }
+    public function gradationList() {
+        $data['title'] = "Gradation List";
+        $data['segment1'] = Request::segment(1);
+        $data['segment2'] = "//";
+        
+        $masterModel = new MasterModel();
+
+        $data['rank'] = request()->get('formRankId');
+        $data['year'] = request()->get('formYearId');
+        $rowPerPage = 10;
+        $page = 0;
+        $rowStart = $rowPerPage * $page;
+
+        $newsList = $masterModel->getAllActiveNewsList();
+		$data['stationList'] = $masterModel->getAllActivePoliceStationsList();
+        $yearList = $masterModel->getAllActiveYearList();
+        $gradesList = $masterModel->getAllActiveGradesList();
+		$gradationList = $masterModel->getAllActiveGradationListPaging($rowPerPage,$data);
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+
+        $mainId = DB::table('visitor_counter')
+                ->insertGetId([
+                    'VCTR_IP' => request()->ip(),
+                    'VCTR_Added_Date' => date("Y-m-d H:i:s")
+                ]);
+        session(['SID_JAL_WEB_VISITOR' => $mainId]);
+
+		return view("pages/gradation_list", compact('data','newsList','gradationList','rowStart','yearList','gradesList'));
+    }
+    
+    public function gradationListPaging() {
+        $masterModel = new MasterModel();
+
+        $page = request()->query('page');
+        $data['rank'] = request()->get('formRankId');
+        $data['year'] = request()->get('formYearId');
+
+        $rowPerPage = 10;
+        if($page > 0){
+            $page = $page - 1;
+            $rowStart = $rowPerPage * $page;
+        } else {
+            $rowStart = $rowPerPage * $page;
+        }
+        
+		$gradationList = $masterModel->getAllActiveGradationListPaging($rowPerPage,$data);
+
+		return view("pages/gradation_list_paging", compact('gradationList','rowStart'));
+    }
     
 }

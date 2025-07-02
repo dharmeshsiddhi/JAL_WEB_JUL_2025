@@ -704,4 +704,52 @@ class MasterModel extends Model
             ->orderBy('MSLD_Updated_Date', 'desc')
             ->value('MSLD_Updated_Date');
     }
+
+    /**
+     * Created By: Dharmesh Patil
+     * Created Date: 11 Feb 2024
+     * Code For: this function is used for get active press list
+     */
+    public function getAllActiveGradationListPaging($rowPerPage,$data) {
+        $query = DB::table('master_gradation')
+            ->join('master_grades', 'master_gradation.MGR_Grade_Id', '=', 'master_grades.MGRD_ID')
+            ->join('master_year', 'master_gradation.MGR_Year_Id', '=', 'master_year.MYR_ID')
+            ->select('MGR_ID','MGR_Year_Id','MGR_Grade_Id','MGR_Title','MGR_Attach','MGR_Status','MGRD_Name','MYR_Name') 
+            ->where('MGR_Status', 1);
+            if($data['rank'] != '') {
+                $query->where('MGR_Grade_Id', $data['rank']);
+            }
+            if($data['year'] != '') {
+                $query->where('MGR_Year_Id', $data['year']);
+            }
+            $query->orderBy('MGR_ID', 'desc');
+        $queryResult = $query->paginate($rowPerPage)->withPath('/gradation-list/ajax-paginate-gradation-list');
+        return $queryResult;
+    }
+
+    /**
+     * Created By: Dharmesh Patil
+     * Created Date: 11 Feb 2024
+     * Code For: this function is used for get active news list
+     */
+    public function getAllActiveYearList() {
+        return DB::table('master_year')
+            ->select('MYR_ID','MYR_Name','MYR_Status') 
+            ->where('MYR_Status', 1)
+            ->orderBy('MYR_Name', 'asc')
+            ->get();
+    }
+
+    /**
+     * Created By: Dharmesh Patil
+     * Created Date: 11 Feb 2024
+     * Code For: this function is used for get active news list
+     */
+    public function getAllActiveGradesList() {
+        return DB::table('master_grades')
+            ->select('MGRD_ID','MGRD_Name','MGRD_Status') 
+            ->where('MGRD_Status', 1)
+            ->orderBy('MGRD_Name', 'asc')
+            ->get();
+    }
 }

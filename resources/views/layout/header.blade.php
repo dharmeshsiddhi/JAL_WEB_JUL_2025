@@ -201,6 +201,17 @@
                                                                     </li>
                                                                 </ul>
                                                             </li>
+                                                            <li class="nav-item level-0 dropdown">
+                                                                <a href="javascript:void(0);" class="nav-link has-submenu" id="sm-17149963338979644-15" aria-haspopup="true" aria-controls="sm-17149963338979644-16" aria-expanded="false" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_POLICE_CORNER') }}</a>
+                                                                <ul class="dropdown-menu" id="sm-17149963338979644-16" role="group" aria-hidden="true" aria-labelledby="sm-17149963338979644-15" aria-expanded="false">
+                                                                    <li class="dropdown-item level-1">
+                                                                        <a href="/gradation-list" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_POLICE_CORNER_GRADATION_LIST') }}</a>
+                                                                    </li>
+                                                                    <li class="dropdown-item level-1">
+                                                                        <a href="/recruitments" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_POLICE_CORNER_RECRUITMENT') }}</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
                                                             <li class="nav-item level-0">
                                                                 <a href="/photo-gallery" class="nav-link" data-target="#" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_PHOTO_GALLERY') }}</a>
                                                             </li>
