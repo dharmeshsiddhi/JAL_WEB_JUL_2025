@@ -185,6 +185,9 @@
                                                                         <a href="/anti-narcotics" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_ANTI_NARCOTICS') }}</a>
                                                                     </li>
                                                                     <li class="dropdown-item level-1">
+                                                                        <a href="/useful-websites" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_USEFUL_WEBSITES') }}</a>
+                                                                    </li>
+                                                                    <li class="dropdown-item level-1">
                                                                         <a href="/scheduled-cast-tribe" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_OFFENCE_ACTS') }}</a>
                                                                     </li>
                                                                     <li class="dropdown-item level-1">
@@ -195,9 +198,6 @@
                                                                     </li>
                                                                     <li class="dropdown-item level-1">
                                                                         <a href="/PDF/Offence-Details-V13-ADG-Office.pdf" target="_blank" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_TRAFFIC_FINES') }}</a>
-                                                                    </li>
-                                                                    <li class="dropdown-item level-1">
-                                                                        <a href="/prevent-crime" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_REPORT_CRIME') }}</a>
                                                                     </li>
                                                                 </ul>
                                                             </li>

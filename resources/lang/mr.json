@@ -848,6 +848,32 @@
     "ANTI_NARCO_PAGE_TIPS_5_TITLE": "कायदेशीर कार्यवाही",
     "ANTI_NARCO_PAGE_TIPS_5_LINE": "कायदा न्यायालयात पुरावे आणि तज्ञांचे साक्ष पुरवून औषध-संबंधित गुन्ह्यांच्या खटल्यांना मदत करणे.",
 
-    "FOOTER_VISITOR_COUNT": "संकेतस्थळ अभ्यागत"
+    "FOOTER_VISITOR_COUNT": "संकेतस्थळ अभ्यागत",
+    "HEADER_MENU_CITIZEN_CHARTER_USEFUL_WEBSITES": "उपयुक्त संकेतस्थळे",
+
+    "USEFUL_WEBSITES_PAGE_TITLE": "उपयुक्त संकेतस्थळे",
+    "USEFUL_WEBSITES_PAGE_TABLE_TITLE": "शीर्षक",
+    "USEFUL_WEBSITES_PAGE_TABLE_LINK": "लिंक",
+    "USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE": "महाराष्ट्र पोलीस",
+    "USEFUL_WEBSITES_PAGE_TABLE_CYBER_REPORTING": "नॅशनल सायबर क्राइम रिपोर्टिंग पोर्टल",
+    "USEFUL_WEBSITES_PAGE_TABLE_MAHA_GOV": "महाराष्ट्र शासन",
+    "USEFUL_WEBSITES_PAGE_TABLE_HOME_DEPT": "गृहमंत्रालय, महाराष्ट्र शासन",
+    "USEFUL_WEBSITES_PAGE_TABLE_CCTNS": "गुन्हे आणि गुन्हेगार ट्रॅकिंग नेटवर्क आणि प्रणाली ( सि.सि.टी.एन.एस.)",
+    "USEFUL_WEBSITES_PAGE_TABLE_APLE_SARKAR": "आपले सरकार",
+    "USEFUL_WEBSITES_PAGE_TABLE_GOV_INDIA": "भारत सरकार",
+    "USEFUL_WEBSITES_PAGE_TABLE_HOME_AFFAIR_MINISTRY": "गृहमंत्रालय, भारत सरकार",
+    "USEFUL_WEBSITES_PAGE_TABLE_POLICE_CLEARANCE": "पोलीस तपासणी सेवा - महाराष्ट्र पोलीस",
+    "USEFUL_WEBSITES_PAGE_TABLE_FRRO": "एफ.आर.आर.ओ. (विदेशी नोंदणी कार्यालय)",
+    "USEFUL_WEBSITES_PAGE_TABLE_CID": "गुन्हे अन्वेषण विभाग, महाराष्ट्र राज्य",
+    "USEFUL_WEBSITES_PAGE_TABLE_CONSTITUTE": "भारताचे संविधान",
+    "USEFUL_WEBSITES_PAGE_TABLE_SUPREME_COURT": "सर्वोच्च न्यायालय",
+    "USEFUL_WEBSITES_PAGE_TABLE_HIGH_COURT": "मुंबई उच्च न्यायालय",
+    "USEFUL_WEBSITES_PAGE_TABLE_NJDG": "एनजेडीजी | राष्ट्रीय न्यायिक डेटा ग्रिड",
+    "USEFUL_WEBSITES_PAGE_TABLE_BPRD": "पोलीस संशोधन आणि विकास संस्था, गृहमंत्रालय, भारत सरकार",
+    "USEFUL_WEBSITES_PAGE_TABLE_MSPHC": "महाराष्ट्र राज्य पोलीस गृहनिर्माण कल्याण महामंडळ मर्या.",
+    "USEFUL_WEBSITES_PAGE_TABLE_CPRPUNE": "पोलीस संशोधन केंद्र",
+    "USEFUL_WEBSITES_PAGE_TABLE_MUMBAI_POLICE": "मुंबई पोलीस",
+    "USEFUL_WEBSITES_PAGE_TABLE_DHULE_POLICE": "धुळे पोलीस",
+    "USEFUL_WEBSITES_PAGE_TABLE_NDB_POLICE": "नंदुरबार पोलीस"
     
 }

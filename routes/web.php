@@ -112,3 +112,4 @@ Route::get('/police-map', [HomeController::class, 'policeMap']);
 Route::get('/cyber-safety', [HomeController::class, 'cyberSafety']);
 Route::get('/women-safety', [HomeController::class, 'womenSafety']);
 Route::get('/anti-narcotics', [HomeController::class, 'antiNarcotics']);
+Route::get('/useful-websites', [HomeController::class, 'usefulWebsites']);

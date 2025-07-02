@@ -852,6 +852,32 @@
     "ANTI_NARCO_PAGE_TIPS_5_TITLE": "Legal Proceedings",
     "ANTI_NARCO_PAGE_TIPS_5_LINE": "Assisting in the prosecution of drug-related offenses by providing evidence and expert testimony in court.",
 
-    "FOOTER_VISITOR_COUNT": "Visitor Count"
+    "FOOTER_VISITOR_COUNT": "Visitor Count",
+    "HEADER_MENU_CITIZEN_CHARTER_USEFUL_WEBSITES": "USEFUL WEBSITES",
+
+    "USEFUL_WEBSITES_PAGE_TITLE": "Useful Websites",
+    "USEFUL_WEBSITES_PAGE_TABLE_TITLE": "TITLE",
+    "USEFUL_WEBSITES_PAGE_TABLE_LINK": "LINK",
+    "USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE": "Maharashtra Police",
+    "USEFUL_WEBSITES_PAGE_TABLE_CYBER_REPORTING": "National Cyber Crime Reporting Portal",
+    "USEFUL_WEBSITES_PAGE_TABLE_MAHA_GOV": "Government of Maharashtra",
+    "USEFUL_WEBSITES_PAGE_TABLE_HOME_DEPT": "Home Department, Government of Maharashtra",
+    "USEFUL_WEBSITES_PAGE_TABLE_CCTNS": "CCTNS PORTAL (Maharashtra Police - Services for Citizens)",
+    "USEFUL_WEBSITES_PAGE_TABLE_APLE_SARKAR": "Aaple Sarkar",
+    "USEFUL_WEBSITES_PAGE_TABLE_GOV_INDIA": "Government of India",
+    "USEFUL_WEBSITES_PAGE_TABLE_HOME_AFFAIR_MINISTRY": "Ministry of Home Affairs, Government of India",
+    "USEFUL_WEBSITES_PAGE_TABLE_POLICE_CLEARANCE": "Police Clearance Services - Maharashtra Police",
+    "USEFUL_WEBSITES_PAGE_TABLE_FRRO": "F.R.R.O. (The Foreigner Registration Office)",
+    "USEFUL_WEBSITES_PAGE_TABLE_CID": "Maharashtra State C.I.D.",
+    "USEFUL_WEBSITES_PAGE_TABLE_CONSTITUTE": "Constitution of India",
+    "USEFUL_WEBSITES_PAGE_TABLE_SUPREME_COURT": "Supreme Court of India",
+    "USEFUL_WEBSITES_PAGE_TABLE_HIGH_COURT": "Bombay High Court",
+    "USEFUL_WEBSITES_PAGE_TABLE_NJDG": "NJDG | National Judicial Data Grid",
+    "USEFUL_WEBSITES_PAGE_TABLE_BPRD": "Bureau of Police Research and Development Ministry of Home Affairs",
+    "USEFUL_WEBSITES_PAGE_TABLE_MSPHC": "Maharashtra State Police Housing Welfare Corporation Ltd.",
+    "USEFUL_WEBSITES_PAGE_TABLE_CPRPUNE": "Centre for Police Research",
+    "USEFUL_WEBSITES_PAGE_TABLE_MUMBAI_POLICE": "Mumbai Police",
+    "USEFUL_WEBSITES_PAGE_TABLE_DHULE_POLICE": "Bombay High Court",
+    "USEFUL_WEBSITES_PAGE_TABLE_NDB_POLICE": "Bombay High Court"
 
 }
