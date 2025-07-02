@@ -93,12 +93,19 @@ class MasterModel extends Model
      * Created Date: 11 Feb 2024
      * Code For: this function is used for get active press list
      */
-    public function getAllActivePressListPaging($rowPerPage) {
-        return DB::table('master_press')
+    public function getAllActivePressListPaging($rowPerPage,$data) {
+        $query = DB::table('master_press')
             ->select('MPR_ID','MPR_Lang','MPR_Title','MPR_Attach','MPR_Date','MPR_Status') 
-            ->where('MPR_Status', 1)
-            ->orderBy('MPR_Added_Date', 'desc')
-            ->paginate($rowPerPage)->withPath('/press-release/ajax-paginate-press-release-list');
+            ->where('MPR_Status', 1);
+            if($data['month'] != '') {
+                $query->whereMonth('MPR_Date', $data['month']);
+            }
+            if($data['year'] != '') {
+                $query->whereYear('MPR_Date', $data['year']);
+            }
+            $query->orderBy('MPR_Added_Date', 'desc');
+        $queryResult = $query->paginate($rowPerPage)->withPath('/press-release/ajax-paginate-press-release-list');
+        return $queryResult;
     }
     
     public function getAllScStActList() {

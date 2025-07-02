@@ -657,7 +657,7 @@
                     <a href="https://jalgaonpolice.gov.in/police-stations?id=3" target="_blank"><button>{{ __('ORG_PAGE_BOX_SDPO_JAL_PS_SHANIPETH') }}</button></a>
                     <a href="https://jalgaonpolice.gov.in/police-stations?id=4" target="_blank"><button>{{ __('ORG_PAGE_BOX_SDPO_JAL_PS_RAMANDAND') }}</button></a>
                     <a href="https://jalgaonpolice.gov.in/police-stations?id=36" target="_blank"><button>{{ __('ORG_PAGE_BOX_SDPO_JAL_PS_CYBER') }}</button></a>
-                </div>
+                    </div>
                 <div class="bhusawalPSMain statePopupMain">
                     <a href="https://jalgaonpolice.gov.in/police-stations?id=8" target="_blank"><button>{{ __('ORG_PAGE_BOX_SDPO_BSL_PS_BAZARPETH') }}</button></a>
                     <a href="https://jalgaonpolice.gov.in/police-stations?id=7" target="_blank"><button>{{ __('ORG_PAGE_BOX_SDPO_BSL_PS_BSL_CITY') }}</button></a>

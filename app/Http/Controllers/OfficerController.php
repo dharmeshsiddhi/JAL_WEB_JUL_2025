@@ -21,6 +21,15 @@ class OfficerController extends SettingController {
         $newsList = $masterModel->getAllActiveNewsList();
 		$data['stationList'] = $masterModel->getAllActivePoliceStationsList();
 		$officerList = $masterModel->getAllActiveSeniorOfficersList();
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+
+        $mainId = DB::table('visitor_counter')
+                ->insertGetId([
+                    'VCTR_IP' => request()->ip(),
+                    'VCTR_Added_Date' => date("Y-m-d H:i:s")
+                ]);
+        session(['SID_JAL_WEB_VISITOR' => $mainId]);
         // if(count($officerList) > 0) {
         //     foreach($officerList as $detail) {
         //         $external_link = 'https://panel.dhulepolice.gov.in/'.$detail->MSO_Photo;
@@ -32,15 +41,6 @@ class OfficerController extends SettingController {
         //         }
         //     }
         // }
-        $lastDate = $this->getWebsiteLastUpdatedDate();
-        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
-
-        $mainId = DB::table('visitor_counter')
-                ->insertGetId([
-                    'VCTR_IP' => request()->ip(),
-                    'VCTR_Added_Date' => date("Y-m-d H:i:s")
-                ]);
-        session(['SID_JAL_WEB_VISITOR' => $mainId]);
 		return view("pages/officer_list", compact('data','newsList','officerList'));
     }
     

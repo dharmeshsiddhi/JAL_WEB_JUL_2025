@@ -18,13 +18,15 @@ class NewsController extends SettingController {
         
         $masterModel = new MasterModel();
 
+        $data['month'] = request()->get('formMonthId');
+        $data['year'] = request()->get('formYearId');
         $rowPerPage = 10;
         $page = 0;
         $rowStart = $rowPerPage * $page;
 
         $newsList = $masterModel->getAllActiveNewsList();
 		$data['stationList'] = $masterModel->getAllActivePoliceStationsList();
-		$pressList = $masterModel->getAllActivePressListPaging($rowPerPage);
+		$pressList = $masterModel->getAllActivePressListPaging($rowPerPage,$data);
         $lastDate = $this->getWebsiteLastUpdatedDate();
         session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
 
@@ -42,6 +44,8 @@ class NewsController extends SettingController {
         $masterModel = new MasterModel();
 
         $page = request()->query('page');
+        $data['month'] = request()->get('formMonthId');
+        $data['year'] = request()->get('formYearId');
 
         $rowPerPage = 10;
         if($page > 0){
@@ -51,7 +55,7 @@ class NewsController extends SettingController {
             $rowStart = $rowPerPage * $page;
         }
         
-		$pressList = $masterModel->getAllActivePressListPaging($rowPerPage);
+		$pressList = $masterModel->getAllActivePressListPaging($rowPerPage,$data);
 
 		return view("pages/press_list_paging", compact('pressList','rowStart'));
     }
@@ -80,6 +84,7 @@ class NewsController extends SettingController {
                     'VCTR_Added_Date' => date("Y-m-d H:i:s")
                 ]);
         session(['SID_JAL_WEB_VISITOR' => $mainId]);
+        //echo "<pre>";print_r($recruitmentList);exit;
 		return view("pages/recruitment_list", compact('data','newsList','recruitmentList','rowStart'));
     }
     

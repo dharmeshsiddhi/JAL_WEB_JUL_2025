@@ -14,7 +14,7 @@
 
 		<link rel="icon" type="image/png" href="{{ asset('favicon.png') }}"	/>
 
-		<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css?ver=130') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css?ver=131') }}" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
@@ -24,8 +24,8 @@
         <link href="{{ asset('owl/owl.carousel.css') }}" rel="stylesheet" />
         <link href="{{ asset('owl/owl.theme.css') }}" rel="stylesheet" />
         <link href="{{ asset('hyd/css/jquery.fancybox.min.css') }}" rel="stylesheet" />
-        <link href="{{ asset('hyd/css/pal.css?ver=130') }}" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="{{ asset('chat-ui/chatbot/dist/jquery.convform.css?ver=130') }}">
+        <link href="{{ asset('hyd/css/pal.css?ver=131') }}" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('chat-ui/chatbot/dist/jquery.convform.css?ver=131') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('chat-ui/chatbot/demo.css') }}">
 
         <style type="text/css">

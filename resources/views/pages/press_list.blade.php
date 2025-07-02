@@ -7,51 +7,55 @@
             <h2 class="section__titletext" style="color: rgb(10, 36, 99);">{{ __('PRESS_PAGE_TITLE') }}</h2>
             <hr class="section__titlehr" style="background-color: rgb(10, 36, 99);">
         </div>
+        <form id="form1">
+            <div class="row mx-0">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>{{ __('PRESS_PAGE_FORM_MONTH_LABEL') }} :</label>
+                        <div class="rightNavDropdown" data-aos="fade-left">
+                            <select class="home-ds-select col6" id="formMonthId" name="formMonthId">
+                                <option value="" title="{{ __('PRESS_PAGE_FORM_MONTH_SELECT') }}">{{ __('PRESS_PAGE_FORM_MONTH_SELECT') }}</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>{{ __('PRESS_PAGE_FORM_YEAR_LABEL') }} :</label>
+                        <div class="rightNavDropdown" data-aos="fade-left">
+                            <select class="home-ds-select col6" id="formYearId" name="formYearId">
+                                <option value="" title="{{ __('PRESS_PAGE_FORM_YEAR_SELECT') }}">{{ __('PRESS_PAGE_FORM_YEAR_SELECT') }}</option>
+                                <?php for ($year=2023; $year <= date('Y)'); $year++): ?>
+                                    <option value="<?php echo $year;?>"><?php echo $year;?></option>
+                                <?php endfor; ?>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label>&nbsp;</label>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mt-2" style="padding:15px;" onclick="searchPressList()"><i class="fa fa-search mr-2"></i>{{ __('PRESS_PAGE_FORM_BUTTON') }}</button>
+                </div>
+                <div class="col-md-12"><hr></div>
+            </div>
+        </form>
         @if(count($pressList))
             <div class="row mx-0">
                 <div class="col-md-1"></div>
-                <form id="form1"></form>
                 <div class="col-md-10" id="ajaxResponseData" style="overflow-x:auto;">
-                    <!-- <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>From Date :</label>
-                                <input
-                                    type="tel"
-                                    class="form-control form-control-sm"
-                                    id="us_date1"
-                                    name="us_date1"
-                                    placeholder="DD-MM-YYYY"
-                                    onkeypress="return handle1(event, 'us_name');"
-                                    tabindex="1"
-                                    readonly = "readonly" 
-                                    value="{{ date('d-m-Y', strtotime('-1 month', strtotime(date('d-m-Y')))) }}"
-                                />
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>To Date :</label>
-                                <input
-                                    type="tel"
-                                    class="form-control form-control-sm"
-                                    id="us_date2"
-                                    name="us_date2"
-                                    placeholder="DD-MM-YYYY"
-                                    onkeypress="return handle1(event, 'us_name');"
-                                    tabindex="1"
-                                    readonly = "readonly" 
-                                    value="{{ date('d-m-Y') }}"
-                                />
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <label>&nbsp;</label>
-                            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="openCustomModal()"><i class="fa fa-search mr-2"></i>View</button>
-                        </div>
-                        <div class="col-md-12"><hr></div>
-                    </div> -->
                     <table class="table table-hover table-bordered table-responsive-md mt-10">
                         <thead>
                             <tr>

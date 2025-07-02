@@ -567,7 +567,6 @@
     "CYBER_SAFETY_PAGE_TIPS_1_OPTION_3": "3. While using a credit card for making payments online, check if the website is secure The CVV will also be required.",
     "CYBER_SAFETY_PAGE_TIPS_1_OPTION_4": "4. Do not give any information to persons seeking credit card information over phone",
     "CYBER_SAFETY_PAGE_TIPS_1_OPTION_5": "5. Notify your bank / credit card issuer if you do not receive the monthly credit card statement on time. If a credit card is misplaced or lost, get it cancelled immediately.",
-
     "CYBER_SAFETY_PAGE_TIPS_2_TITLE": "Online Safety Tips",
     "CYBER_SAFETY_PAGE_TIPS_2_OPTION_1_MAIN": "1. Never share your password with other people (except for your parents).",
     "CYBER_SAFETY_PAGE_TIPS_2_OPTION_1_SUB": "Your passwords to websites, email accounts and instant messenger services should not be shared with friends or strangers. Your friends may not be as safe as you are and may unknowingly subject you to danger. You should, however, share your passwords with your parents if they ask so they can make sure you're using the Internet safely.",
@@ -589,7 +588,6 @@
     "CYBER_SAFETY_PAGE_TIPS_2_OPTION_9_SUB": "There are some websites that kids just should not use. Don't use websites that contain adult content or that facilitate communication with older adults. No matter how much you think you know about the Internet, there are some people and places you just aren't ready to deal with. Enjoy websites that are designed for people your own age.",
     "CYBER_SAFETY_PAGE_TIPS_2_OPTION_10_MAIN": "10. Understand what you put online will be there forever.",
     "CYBER_SAFETY_PAGE_TIPS_2_OPTION_10_SUB": "Assume that everything you put online—- every email you write, every picture you post, every blog or journal entry you post—- will be accessible on the Internet forever. Many search engines copy Internet pages and save them for viewing even after the pages are no longer online. Think about that before you post anything online. Do you really want pictures or blog entries to be seen 10 years from now?",
-    
     "CYBER_SAFETY_PAGE_TIPS_3_TITLE": "Are You A Safe Cyber Surfer?",
     "CYBER_SAFETY_PAGE_TIPS_3_LINE_1": "Fortunately, there are steps you can take to protect your computer, your information and your peace of mind from computer creeps who try to slow down a network operation, or worse yet, steal personal information to commit a crime. Here are some tips to help you, from the Mumbai Police.",
     "CYBER_SAFETY_PAGE_TIPS_3_LINE_2": "Make sure your passwords have both letters and numbers, and are at least eight characters long. Avoid common words: some hackers use programs that can try every word in the dictionary. Don't use your personal information, your login name or adjacent keys on the keyboard as passwords-and don't share your passwords online or over the phone.",
@@ -597,14 +595,12 @@
     "CYBER_SAFETY_PAGE_TIPS_3_LINE_4": "Prevent unauthorized access to your computer through firewall software or hardware, especially if you are a high-speed user. A properly configured firewall makes it tougher for hackers to locate your computer. Firewalls are also designed to prevent hackers from getting into your programs and files. Some recently released operating system software and some hardware devices come with a built-in firewall. Some firewalls block outgoing information as well as incoming files. That stops hackers from planting programs called spyware-that cause your computer to send out your personal information without your approval.",
     "CYBER_SAFETY_PAGE_TIPS_3_LINE_5": "Don't open a file attached to an e-mail unless you are expecting it or know what it contains. If you send an attachment, type a message explaining what it is. Never forward any e-mail warning about a new virus. It may be a hoax and could be used to spread a virus.",
     "CYBER_SAFETY_PAGE_TIPS_3_LINE_6": "When something bad happens-you think you've been hacked or infected by a virus, e-mail a report of the incident to your Internet provider and the hacker's Internet provider, if you can tell what it is, as well as your software vendor.",
-    
     "CYBER_SAFETY_PAGE_TIPS_4_TITLE": "Take a test before opening e-mail attachment",
     "CYBER_SAFETY_PAGE_TIPS_4_OPTION_1": "1. Is the email from someone that you know?",
     "CYBER_SAFETY_PAGE_TIPS_4_OPTION_2": "2. Have you received email from this sender before?",
     "CYBER_SAFETY_PAGE_TIPS_4_OPTION_3": "3. Were you expecting email with an attachment from this sender?",
     "CYBER_SAFETY_PAGE_TIPS_4_OPTION_4": "4. Does email from the sender with the contents as described in the Subject line and the name of the attachment(s) make sense?",
     "CYBER_SAFETY_PAGE_TIPS_4_OPTION_5": "5. Does this email contain a virus? To determine this, you need to install and use an anti-virus program.",
-    
     "CYBER_SAFETY_PAGE_TIPS_5_TITLE": "What is computer security and why should I care about computer security?",
     "CYBER_SAFETY_PAGE_TIPS_5_OPTION_1_MAIN": "1. What is computer security?",
     "CYBER_SAFETY_PAGE_TIPS_5_OPTION_1_SUB": "security is the process of preventing and detecting unauthorized use of your computer. Prevention measures help you to stop unauthorized users (also known as 'intruders') from accessing any part of your computer system. Detection helps you to determine whether or not someone attempted to break into your system, if they were successful, and what they may have done.",
@@ -614,7 +610,6 @@
     "CYBER_SAFETY_PAGE_TIPS_5_OPTION_3_SUB": "Intruders (also referred to as hackers, attackers, or crackers) may not care about your identity. Often they want to gain control of your computer so they can use it to launch attacks on other computer systems. Having control of your computer gives them the ability to hide their true location as they launch attacks, often against high-profile computer systems such as government or financial systems. Even if you have a computer connected to the Internet only to play the latest games or to send email to friends and family, your computer may be a target. Intruders may be able to watch all your actions on the computer, or cause damage to your computer by reformatting your hard drive or changing your data.",
     "CYBER_SAFETY_PAGE_TIPS_5_OPTION_4_MAIN": "4. How easy is it to break into my computer?",
     "CYBER_SAFETY_PAGE_TIPS_5_OPTION_4_SUB": "Unfortunately, intruders are always discovering new vulnerabilities (informally called 'holes') to exploit in computer software. The complexity of software makes it increasingly difficult to thoroughly test the security of computer systems. When holes are discovered, computer vendors will usually develop patches to address the problem(s). However, it is up to you, the user, to obtain and install the patches, or correctly configure the software to operate more securely. Also, some software applications have default settings that allow other users to access your computer unless you change the settings to be more secure. Examples include chat programs that let outsiders execute commands on your computer or web browsers that could allow someone to place harmful programs on your computer that run when you click on them.",
-    
     "CYBER_SAFETY_PAGE_TIPS_6_TITLE": "Use Strong Password",
     "CYBER_SAFETY_PAGE_TIPS_6_OPTION_1": "1. For each computer and service you use (e-mail, chatting, online purchasing, for example), you should have a password.",
     "CYBER_SAFETY_PAGE_TIPS_6_OPTION_2": "2. You shouldn't write them down nor should you share them with anyone, even your best friends.",
@@ -622,7 +617,6 @@
     "CYBER_SAFETY_PAGE_TIPS_6_OPTION_4": "4. Use alphanumeric characters and special characters in your password.",
     "CYBER_SAFETY_PAGE_TIPS_6_OPTION_5": "5. The length of password should be as long as possible (More than 8 characters).",
     "CYBER_SAFETY_PAGE_TIPS_6_OPTION_6": "6. Do not write it to some place where it is visible to someone else.",
-
     "CYBER_SAFETY_PAGE_TIPS_7_TITLE": "Protect Your Website",
     "CYBER_SAFETY_PAGE_TIPS_7_OPTION_1": "1. Stay informed and be in touch with security related news.",
     "CYBER_SAFETY_PAGE_TIPS_7_OPTION_2": "2. Watch traffic to your site. Put host-based intrusion detection devices on your web servers and monitor activity looking for any irregularities.",
@@ -632,7 +626,6 @@
     "CYBER_SAFETY_PAGE_TIPS_7_OPTION_6": "6. Make sure that the web servers running your public web site are physically separate and individually protected from your internal corporate network.",
     "CYBER_SAFETY_PAGE_TIPS_7_OPTION_7": "7. Protect your databases. If your web site serves up dynamic content from database, consider putting that database behind a second interface on your firewall, with tighter access rules than the interface to your web server.",
     "CYBER_SAFETY_PAGE_TIPS_7_OPTION_8": "8. Back up your web site after every update.",
-
     "CYBER_SAFETY_PAGE_TIPS_8_TITLE": "Protect Your Personal Computer",
     "CYBER_SAFETY_PAGE_TIPS_8_OPTION_1": "1. Use the latest version of a good anti-virus software package which allows updation from the Internet.",
     "CYBER_SAFETY_PAGE_TIPS_8_OPTION_2": "2. Use the latest version of the operating system, web browsers and e-mail programs.",
@@ -642,14 +635,12 @@
     "CYBER_SAFETY_PAGE_TIPS_8_OPTION_6": "6. Use different passwords for different websites.",
     "CYBER_SAFETY_PAGE_TIPS_8_OPTION_7": "7. Send credit card information only to secure sites.",
     "CYBER_SAFETY_PAGE_TIPS_8_OPTION_8": "8. Use a security program that gives you control over 'Cookies' that send information back to websites. Letting all cookies in without monitoring them could be risky.",
-
     "CYBER_SAFETY_PAGE_TIPS_9_TITLE": "Tips For Children",
     "CYBER_SAFETY_PAGE_TIPS_9_OPTION_1": "1. Do not give out identifying information such as name, home address, school name or telephone number in a chat room.",
     "CYBER_SAFETY_PAGE_TIPS_9_OPTION_2": "2. Do not send your photograph to any one on the Net without initially checking with the parent or guardian.",
     "CYBER_SAFETY_PAGE_TIPS_9_OPTION_3": "3. Do not respond to messages or bulletin board items that are obscene, belligerent or threatening.",
     "CYBER_SAFETY_PAGE_TIPS_9_OPTION_4": "4. Never arrange a face to face meeting without informing your parent or guardian.",
     "CYBER_SAFETY_PAGE_TIPS_9_OPTION_5": "5. Remember that people online may not be who they seem to be.",
-
     "WOMEN_SAFETY_PAGE_TITLE": "Women Safety Tips",
     "WOMEN_SAFETY_PAGE_TIPS_1_TITLE": "Eve Teasing & Beyond",
     "WOMEN_SAFETY_PAGE_TIPS_1_LINE_1": "Streets, bus stands, railway stations, parks and other public places should be for everyone to access and enjoy. Yet for many women they are the scenes of harassment. Everyday women face systematic assault on their fundamental right to free movement and personal dignity.",
@@ -671,7 +662,6 @@
     "WOMEN_SAFETY_PAGE_TIPS_1_MYTH_4_OPTION_4": "Show your opposition strongly.",
     "WOMEN_SAFETY_PAGE_TIPS_1_MYTH_4_OPTION_5": "If you notice a situation where a woman seems to be being harassed, you may be able to help her.",
     "WOMEN_SAFETY_PAGE_TIPS_1_MYTH_4_OPTION_6": "If someone is badgering her, you could go over and ask 'Is someone bothering you?' If a woman in a crowd shouts out about being pawed, you might be able to voice a supportive comment to the crowd, such as 'Whoever did that, it's not welcome.'",
-
     "WOMEN_SAFETY_PAGE_TIPS_2_TITLE": "Marriages",
     "WOMEN_SAFETY_PAGE_TIPS_2_SIGN_TITLE": "Signs of A Cheating Husband",
     "WOMEN_SAFETY_PAGE_TIPS_2_SIGN_LINE_1": "One of the most common ways you can detect if your partner is cheating is by looking out for changes in his day to day routine and behaviour. If your partner is having an affair it is quite likely that he will start acting differently. This is because we all settle into certain routines when things are regular and normal so it is only natural that if something changes in our lives then things get thrown off course and we start doing things differently. These changes in your husband's routine can be giveaway clues that he's seeing someone else but can be so easily missed.",
@@ -697,7 +687,6 @@
     "WOMEN_SAFETY_PAGE_TIPS_2_SIGN_FOLLOW_OPTION_19": "Does he make a point of keeping the car/bike free of things belonging to you or the kids?",
     "WOMEN_SAFETY_PAGE_TIPS_2_SIGN_FOLLOW_OPTION_20": "Has he has started keeping an overnight bag in his car or office, apparently for a workout?",
     "WOMEN_SAFETY_PAGE_TIPS_2_SIGN_FOLLOW_OPTION_LINE": "These signs of a cheating husband appearing now and then may not mean anything in isolation, but if you notice a number of them happening with a pattern, you should take them as a warning signs that there's probably something wrong going on. You must take corrective steps to save your marriage.",
-
     "WOMEN_SAFETY_PAGE_TIPS_3_TITLE": "Domestic Violence",
     "WOMEN_SAFETY_PAGE_TIPS_3_FACING_TITLE": "If you are facing Domestic Violence",
     "WOMEN_SAFETY_PAGE_TIPS_3_FACING_LINE_1": "Within the four walls of homes, the violence against women is quite high. Domestic violence against is widely prevalent, but has remained largely invisible. Statistics reveal that 45% of Indian women are slapped, kicked or beaten by their husbands. (ICRW 2002) .32% had committed acts of violence against their pregnant wives. Every 60 minutes a woman dies in India due to domestic violence. Women accept violence because social norms sanction them. At the same time, cultural conditioning and economic dependence prevent the vast majority of women leaving their marital homes. Though there is criminal law to prevent domestic violence, the recent civil law “Protection of women from Domestic Violence” is aimed at providing relief, compensation and support to a woman.",
@@ -774,7 +763,6 @@
     "WOMEN_SAFETY_PAGE_TIPS_3_FACING_DOMESTIC_ALIENTING_OPTION_6": "Custody orders.",
     "WOMEN_SAFETY_PAGE_TIPS_3_FACING_DOMESTIC_ALIENTING_OPTION_7": "Compensation orders.",
     "WOMEN_SAFETY_PAGE_TIPS_3_FACING_LINE": "These signs of a cheating husband appearing now and then may not mean anything in isolation, but if you notice a number of them happening with a pattern, you should take them as a warning signs that there's probably something wrong going on. You must take corrective steps to save your marriage.",
-    
     "WOMEN_SAFETY_PAGE_TIPS_4_TITLE": "Dowry Harassment",
     "WOMEN_SAFETY_PAGE_TIPS_4_PRACTICE_TITLE": "Practice of Dowry",
     "WOMEN_SAFETY_PAGE_TIPS_4_PRACTICE_LINE_1": "In India, Dowry system that has been prevailing amongst every society and affected lives of the people who are involved in marriage and on those who are around.",
@@ -800,7 +788,6 @@
     "WOMEN_SAFETY_PAGE_TIPS_4_PARENT_LINE_2": "The relatives and in-laws must stop passing awkward and degrading comments taking a moral responsibility to appreciate and adjust with any shortfalls resulting due to an expensive and delicate new relationship. Then only this devilish Dowry demanding practice will be curbed or routed out and many unmarried will have their lives simplified and scorn-free from the in-laws.",
     "WOMEN_SAFETY_PAGE_TIPS_4_PARENT_LINE_3": "While not opposing voluntary and proportionate property given by parents to and for their children - newly wed couples, everyone must abhor and oppose Any Demand that is put forward as a pre-condition for marriage.",
     "WOMEN_SAFETY_PAGE_TIPS_4_PARENT_LINE_4": "All responsible parents must encourage to discarding such an evil practice and making humble efforts towards the Noble Cause of getting their children wedded to live and lead a happy-married-life, with peace of mind.",
-    
     "WOMEN_SAFETY_PAGE_TIPS_5_TITLE": "Reporting Dowry Harassment",
     "WOMEN_SAFETY_PAGE_TIPS_5_COMPLAINT_TITLE": "What should your complaint include?",
     "WOMEN_SAFETY_PAGE_TIPS_5_COMPLAINT_OPTION_1": "Details of marriage including wedding card, marriage certificate, photos, videos etc.",
@@ -851,10 +838,9 @@
     "ANTI_NARCO_PAGE_TIPS_4_LINE": "Coordinating with national and international law enforcement agencies to tackle drug trafficking on a broader scale.",
     "ANTI_NARCO_PAGE_TIPS_5_TITLE": "Legal Proceedings",
     "ANTI_NARCO_PAGE_TIPS_5_LINE": "Assisting in the prosecution of drug-related offenses by providing evidence and expert testimony in court.",
-
+    
     "FOOTER_VISITOR_COUNT": "Visitor Count",
     "HEADER_MENU_CITIZEN_CHARTER_USEFUL_WEBSITES": "USEFUL WEBSITES",
-
     "USEFUL_WEBSITES_PAGE_TITLE": "Useful Websites",
     "USEFUL_WEBSITES_PAGE_TABLE_TITLE": "TITLE",
     "USEFUL_WEBSITES_PAGE_TABLE_LINK": "LINK",
@@ -878,6 +864,13 @@
     "USEFUL_WEBSITES_PAGE_TABLE_CPRPUNE": "Centre for Police Research",
     "USEFUL_WEBSITES_PAGE_TABLE_MUMBAI_POLICE": "Mumbai Police",
     "USEFUL_WEBSITES_PAGE_TABLE_DHULE_POLICE": "Bombay High Court",
-    "USEFUL_WEBSITES_PAGE_TABLE_NDB_POLICE": "Bombay High Court"
+    "USEFUL_WEBSITES_PAGE_TABLE_NDB_POLICE": "Bombay High Court",
+
+    "PRESS_PAGE_FORM_MONTH_LABEL": "Month",
+    "PRESS_PAGE_FORM_MONTH_SELECT": "All",
+    "PRESS_PAGE_FORM_YEAR_LABEL": "Year",
+    "PRESS_PAGE_FORM_YEAR_SELECT": "All",
+    "PRESS_PAGE_FORM_BUTTON": "SEARCH"
+
 
 }

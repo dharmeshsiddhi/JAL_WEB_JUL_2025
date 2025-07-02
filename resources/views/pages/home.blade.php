@@ -109,27 +109,6 @@
 </style>
 @endsection
 @section("page")
-            <div id="100DayModal" class="modal">
-                <div class="modal__inner">
-                    <label for="3" onclick="close100DayModal()"><i class="fa fa-times m-14"></i></label>
-                    <div class="modal-container">
-                        <div class="modal-header" style="height:50px">
-                            <h2 id="modalTitle">100 दिवसांच्या कार्यालयीन सुधारणांची विशेष मोहीम</h2>
-                        </div>
-                        <div class="modal-mainbody" id="100DayModalBody">
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <!-- <iframe src="https://1drv.ms/p/s!AuL7QrA5jRAlhypIG6dtLDs7mhon?embed=1&em=2" width="100%" height="500" frameborder="0" scrolling="no"></iframe> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="adminActions" onclick="open100DayModal()">
-                <input type="checkbox" name="adminToggle" class="adminToggle" />
-                <a class="adminButton" href="#!"><img src="{{ asset('100day.png') }}" alt="tenant" loading="lazy" width="40" height="40" title="" class=""></a>
-            </div> -->
             <!-- <section class="navsmu">
                 <ul style="margin-bottom: -0.6rem;padding-left: 0.1rem;">
                     <li><a target="_blank" href="https://www.youtube.com/@Jalgaonpolice_"> <i class="fa fa-youtube"></i><span>Youtube</span> </a> </li>
@@ -734,7 +713,7 @@
                     <div class="text-center">
                         <div class="row">
                             <div class="col-lg-2 col-md-3 col-sm-3">
-                                <a class="product-thumb-overlay external" href="/register-complaint" target="_blank">
+                                <a class="product-thumb-overlay" href="/register-complaint" target="_self">
                                     <img src="{{ asset('hyd/quick/PCC-Online.png') }}" alt="">
                                     <h6><span style="color: white;">{{ __('HOME_PAGE_CITIZEN_SERVICES_LODGE_PETITION') }}</span></h6>
                                 </a>

@@ -30,7 +30,7 @@
                         
                         // document.getElementById("100DayModal").style.visibility = "visible";
                         // document.getElementById("100DayModal").style.opacity = 1;
-                
+                    
                         const currentUrl = document.URL;
                         if(currentUrl === "http://127.0.0.1:81/") {
                             if(window.matchMedia("(min-width: 760px)").matches){
@@ -627,6 +627,7 @@ function addAnimation() {
                         $("#errorMsgDiv1").html("");
                         
                         var ddlTarget = $("#ddlTarget").val();
+
                         if(ddlTarget == "MR") {
                             var form_name1 = $("#form_name1").val();
                             var form_mobile = $("#form_mobile").val();
@@ -937,6 +938,22 @@ function addAnimation() {
                 function open100DayModal() {
                     document.getElementById("100DayModal").style.visibility = "visible";
                     document.getElementById("100DayModal").style.opacity = 1;
+                }
+                function searchPressList() {
+                    $('#ajaxResponseData').html('');
+                    let _token = $('meta[name="csrf-token"]').attr("content");
+                    $(".ajaxLoader").show();
+                    $.ajax({
+                        url: "/press-release/ajax-paginate-press-release-list",
+                        type:"POST",
+                        data: $("#form1").serialize() + "&_token=" + _token,
+                    }).done(function (response) {
+                        $(".ajaxLoader").hide();
+                        $("#ajaxResponseData").html(response);
+                    }).fail(function () {
+                        $(".ajaxLoader").hide();
+                        $("#ajaxResponseData").html('<div class="fade d-flex justify-content-between align-items-center alert alert-danger show">Network connection error</div>');
+                    });
                 }
             </script>
         </div>

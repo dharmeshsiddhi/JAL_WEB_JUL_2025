@@ -221,8 +221,8 @@ class HomeController extends SettingController {
       $data['stationList'] = $masterModel->getAllActivePoliceStationsList();
       $stationList = $data['stationList'];
       $natureList = $masterModel->getAllActiveComplaintNatureList();
-      $lastDate = $this->getWebsiteLastUpdatedDate();
-      session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
 
         $mainId = DB::table('visitor_counter')
                 ->insertGetId([
@@ -536,8 +536,8 @@ class HomeController extends SettingController {
 
        $newsList = $masterModel->getAllActiveNewsList();
        $data['stationList'] = $masterModel->getAllActivePoliceStationsList();
-       $lastDate = $this->getWebsiteLastUpdatedDate();
-       session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
 
         $mainId = DB::table('visitor_counter')
                 ->insertGetId([
@@ -562,8 +562,8 @@ class HomeController extends SettingController {
 
       $newsList = $masterModel->getAllActiveNewsList();
       $data['stationList'] = $masterModel->getAllActivePoliceStationsList();
-      $lastDate = $this->getWebsiteLastUpdatedDate();
-      session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
 
         $mainId = DB::table('visitor_counter')
                 ->insertGetId([
@@ -590,8 +590,8 @@ class HomeController extends SettingController {
       $data['stationList'] = $masterModel->getAllActivePoliceStationsList();
       $newsList = $masterModel->getAllActiveNewsList();
       $initiativeList = $masterModel->getAllInitiativeListPaging($rowPerPage);
-      $lastDate = $this->getWebsiteLastUpdatedDate();
-      session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
 
         $mainId = DB::table('visitor_counter')
                 ->insertGetId([
@@ -639,8 +639,8 @@ class HomeController extends SettingController {
             $detail->count = $masterModel->getAllActivePhotoSubListCountByMainId($detail->GMN_ID);
         }
     }
-    $lastDate = $this->getWebsiteLastUpdatedDate();
-    session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
 
         $mainId = DB::table('visitor_counter')
                 ->insertGetId([
@@ -730,8 +730,8 @@ class HomeController extends SettingController {
      
      $newsList = $masterModel->getAllActiveNewsList();
      $data['stationList'] = $masterModel->getAllActivePoliceStationsList();
-     $lastDate = $this->getWebsiteLastUpdatedDate();
-     session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
 
         $mainId = DB::table('visitor_counter')
                 ->insertGetId([
@@ -752,8 +752,8 @@ class HomeController extends SettingController {
      
      $newsList = $masterModel->getAllActiveNewsList();
      $data['stationList'] = $masterModel->getAllActivePoliceStationsList();
-     $lastDate = $this->getWebsiteLastUpdatedDate();
-     session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
 
         $mainId = DB::table('visitor_counter')
                 ->insertGetId([
@@ -773,8 +773,8 @@ class HomeController extends SettingController {
      
      $newsList = $masterModel->getAllActiveNewsList();
      $data['stationList'] = $masterModel->getAllActivePoliceStationsList();
-     $lastDate = $this->getWebsiteLastUpdatedDate();
-     session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
 
         $mainId = DB::table('visitor_counter')
                 ->insertGetId([
@@ -803,6 +803,7 @@ class HomeController extends SettingController {
                     'VCTR_Added_Date' => date("Y-m-d H:i:s")
                 ]);
         session(['SID_JAL_WEB_VISITOR' => $mainId]);
+
      return view("pages/anti_nacro", compact('data','newsList'));
  }
   public function usefulWebsites() {
