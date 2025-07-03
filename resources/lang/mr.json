@@ -26,7 +26,7 @@
     "HEADER_MENU_CITIZEN_CHARTER": "नागरिकांकरिता",
     "HEADER_MENU_CITIZEN_CHARTER_ACCIDENT": "अपघात भरपाई",
     "HEADER_MENU_CITIZEN_CHARTER_OFFENCE_ACTS": "ॲट्रॉसिटी अंतर्गत दाखल गुन्हे",
-    "HEADER_MENU_CITIZEN_CHARTER_RIGHT_TO_INFORMATION": "माहितीचा अधिकार",
+    "HEADER_MENU_CITIZEN_CHARTER_RIGHT_TO_INFORMATION": "माहितीचा अधिकार / नागरीकांची सनद",
     "HEADER_MENU_CITIZEN_CHARTER_TRAFFIC_RULES": "वाहतूक नियम",
     "HEADER_MENU_CITIZEN_CHARTER_TRAFFIC_FINES": "वाहतूक दंड",
 
@@ -860,6 +860,12 @@
     "USEFUL_WEBSITES_PAGE_TABLE_MUMBAI_POLICE": "मुंबई पोलीस",
     "USEFUL_WEBSITES_PAGE_TABLE_DHULE_POLICE": "धुळे पोलीस",
     "USEFUL_WEBSITES_PAGE_TABLE_NDB_POLICE": "नंदुरबार पोलीस",
+    "USEFUL_WEBSITES_PAGE_TABLE_UMANG": "UMANG (युनिफाईड मोबाईल ॲप फॉर न्यू-एज गव्हर्नन्स)",
+    "USEFUL_WEBSITES_PAGE_TABLE_MYGOV": "MyGov माझेसरकार",
+    "USEFUL_WEBSITES_PAGE_TABLE_DIGILOCKER": "डिजिलॉकरचा",
+    "USEFUL_WEBSITES_PAGE_TABLE_CSC": "CSCs (कॉमन सर्व्हिस सेंटर्स)",
+    "USEFUL_WEBSITES_PAGE_TABLE_DIGITAL_INDIA": "डिजिटल इंडिया",
+    "USEFUL_WEBSITES_PAGE_TABLE_LOGO": "लोगो",
 
     "PRESS_PAGE_FORM_MONTH_LABEL": "महिना",
     "PRESS_PAGE_FORM_MONTH_SELECT": "सर्व",

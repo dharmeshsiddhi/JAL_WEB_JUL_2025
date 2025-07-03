@@ -941,7 +941,7 @@ class HomeController extends SettingController {
         // Decode JSON data of API response 
         $responseData = json_decode($verifyResponse); 
         //echo "<pre>";print_r($responseData);exit;
-        // if($responseData->success){
+        if($responseData->success){
             $lastId = DB::table('feedbacks')
                 ->insertGetId([
                     'FBK_Name'=> $form_name,
@@ -958,13 +958,13 @@ class HomeController extends SettingController {
             $response['status'] = 1; 
             $response['message'] = "आपला अभिप्राय यशस्वीरित्या नोंदविण्यात आला. तुमचा अभिप्राय आमच्यासाठी मौल्यवान आहे."; 
             echo json_encode($response);exit;
-        // } else {
-        //     $response = array( 
-        //         'status' => 0, 
-        //         'message' => 'Captcha veirification failed, please try again.' 
-        //     ); 
-        //     echo json_encode($response);exit;
-        // }
+        } else {
+            $response = array( 
+                'status' => 0, 
+                'message' => 'Captcha veirification failed, please try again.' 
+            ); 
+            echo json_encode($response);exit;
+        }
    }
     
 }
