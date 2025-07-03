@@ -457,7 +457,7 @@ class HomeController extends SettingController {
 		return view("pages/contactus", compact('data','newsList','officerList','stationList','dView'));
     }
     
-        public function scstact() {
+     public function scstact() {
             $data['title'] = "Home";
             $data['segment1'] = Request::segment(1);
             $data['segment2'] = "//";
@@ -883,5 +883,88 @@ class HomeController extends SettingController {
 
 		return view("pages/gradation_list_paging", compact('gradationList','rowStart'));
     }
+
+     public function feedback() {
+        $data['title'] = "Feedback";
+        $data['segment1'] = Request::segment(1);
+        $data['segment2'] = "//";
+        
+        $masterModel = new MasterModel();
+        
+        $newsList = $masterModel->getAllActiveNewsList();
+		$data['stationList'] = $masterModel->getAllActivePoliceStationsList();
+        $natureList = $masterModel->getAllActiveFeedbackTypesList();
+        $lastDate = $this->getWebsiteLastUpdatedDate();
+        session(['SID_JAL_WEB_LAST_DATE' => $lastDate]);
+
+        $mainId = DB::table('visitor_counter')
+                ->insertGetId([
+                    'VCTR_IP' => request()->ip(),
+                    'VCTR_Added_Date' => date("Y-m-d H:i:s")
+                ]);
+        session(['SID_JAL_WEB_VISITOR' => $mainId]);
+
+		return view("pages/feedback", compact('data','newsList','natureList'));
+    }
+
+    public function ajaxSubmitNewFeedbackDetail() {
+       $masterModel = new MasterModel();
+       
+       $ddlTarget = request()->get('ddlTarget');
+       $form_name = request()->get('form_name');
+       $form_mobile = request()->get('form_mobile');
+       $form_area = request()->get('form_area');
+       $form_town = request()->get('form_town');
+       $form_cleanliness_id = request()->get('form_cleanliness_id');
+       $form_facilities_id = request()->get('form_facilities_id');
+       $form_treatment_id = request()->get('form_treatment_id');
+       $form_resolved_id = request()->get('form_resolved_id');
+       $form_brief = request()->get('form_brief');
+       
+       if($ddlTarget == 'MR') {
+        $form_name = request()->get('form_name1');
+        $form_area = request()->get('form_area1');
+        $form_town = request()->get('form_town1');
+        $form_brief = request()->get('form_brief1');
+       }
+
+       // Default response 
+        $response = array( 
+            'status' => 0, 
+            'message' => 'Form submission failed, please try again.' 
+        );
+        $recaptcha = request()->get('g-recaptcha-response');
+     
+        $secretKey  = '6LezT-IqAAAAAKnriUt9iyHyR6tYWQnfaTqNGI8Y'; 
+    
+        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$recaptcha);
+        // Decode JSON data of API response 
+        $responseData = json_decode($verifyResponse); 
+        //echo "<pre>";print_r($responseData);exit;
+        // if($responseData->success){
+            $lastId = DB::table('feedbacks')
+                ->insertGetId([
+                    'FBK_Name'=> $form_name,
+                    'FBK_Mobile'=> $form_mobile,
+                    'FBK_Area'=> $form_area,
+                    'FBK_Town'=> $form_town,
+                    'FBK_Cleanliness_ID'=> $form_cleanliness_id,
+                    'FBK_Facilities_ID'=> $form_facilities_id,
+                    'FBK_Treatment_ID'=> $form_treatment_id,
+                    'FBK_Resolved_ID'=> $form_resolved_id,
+                    'FBK_Brief'=> $form_brief,
+                    'FBK_Added_On'=> date("Y-m-d H:i:s"),
+                ]);
+            $response['status'] = 1; 
+            $response['message'] = "आपला अभिप्राय यशस्वीरित्या नोंदविण्यात आला. तुमचा अभिप्राय आमच्यासाठी मौल्यवान आहे."; 
+            echo json_encode($response);exit;
+        // } else {
+        //     $response = array( 
+        //         'status' => 0, 
+        //         'message' => 'Captcha veirification failed, please try again.' 
+        //     ); 
+        //     echo json_encode($response);exit;
+        // }
+   }
     
 }

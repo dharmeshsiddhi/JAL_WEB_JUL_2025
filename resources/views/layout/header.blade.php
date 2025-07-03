@@ -176,6 +176,12 @@
                                                                         <a href="/accident-detail-receipt" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_ACCIDENT') }}</a>
                                                                     </li> -->
                                                                     <li class="dropdown-item level-1">
+                                                                        <a href="/register-complaint" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_COMPLAINT') }}</a>
+                                                                    </li>
+                                                                    <li class="dropdown-item level-1">
+                                                                        <a href="/feedback" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_FEEDBACK') }}</a>
+                                                                    </li>
+                                                                    <li class="dropdown-item level-1">
                                                                         <a href="/cyber-safety" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_CYBER_SAFETY_TIPS') }}</a>
                                                                     </li>
                                                                     <li class="dropdown-item level-1">

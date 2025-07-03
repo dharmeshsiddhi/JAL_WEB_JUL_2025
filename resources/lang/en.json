@@ -863,8 +863,8 @@
     "USEFUL_WEBSITES_PAGE_TABLE_MSPHC": "Maharashtra State Police Housing Welfare Corporation Ltd.",
     "USEFUL_WEBSITES_PAGE_TABLE_CPRPUNE": "Centre for Police Research",
     "USEFUL_WEBSITES_PAGE_TABLE_MUMBAI_POLICE": "Mumbai Police",
-    "USEFUL_WEBSITES_PAGE_TABLE_DHULE_POLICE": "Bombay High Court",
-    "USEFUL_WEBSITES_PAGE_TABLE_NDB_POLICE": "Bombay High Court",
+    "USEFUL_WEBSITES_PAGE_TABLE_DHULE_POLICE": "Dhule Police",
+    "USEFUL_WEBSITES_PAGE_TABLE_NDB_POLICE": "Nandurbar Police",
 
     "PRESS_PAGE_FORM_MONTH_LABEL": "Month",
     "PRESS_PAGE_FORM_MONTH_SELECT": "All",
@@ -880,7 +880,23 @@
     "GRADATION_LIST_PAGE_FORM_YEAR_LABEL": "Year",
     "GRADATION_LIST_PAGE_FORM_YEAR_SELECT": "All",
     "HEADER_MENU_POLICE_CORNER_RECRUITMENT": "POLICE RECRUITMENT",
-    "HEADER_MENU_POLICE_CORNER_INITIATIVES": "PROGRAM & INITIATIVES"
+    "HEADER_MENU_POLICE_CORNER_INITIATIVES": "PROGRAM & INITIATIVES",
+    
+    "HEADER_MENU_CITIZEN_CHARTER_COMPLAINT": "ONLINE COMPLAINT",
+    "HEADER_MENU_CITIZEN_CHARTER_FEEDBACK": "INFORM US / FEEDBACK",
+    "FEEDBACK_PAGE_TITLE": "Inform Us / Feedback",
+    "FEEDBACK_PAGE_NOTICE_HEADER": "Disclaimer",
+    "FEEDBACK_PAGE_NOTICE_TEXT": "As per the prevailing laws, FIR of a major crime (cognizable crimes like theft, burglary, motor vehicle theft, accident, chain-snatching, assault, rape, murder, attempt to commit murder, robbery, dacoity, extortion etc) can only be registered at a Police Station. Please contact your nearest Police Station for the same. Report here feedback of experience about police. Your feedback is valuable to us. Please help us improve our services by providing your honest feedback. All information provided will be kept confidential.",
+    "FEEDBACK_PAGE_CLEANLINESS_LABEL": "Feedback regarding cleanliness tidiness etc in the office and premises during the visit",
+    "FEEDBACK_PAGE_FACILITIES_LABEL": "Regarding the facilities and services provided in the visitors lounge",
+    "FEEDBACK_PAGE_TREATMENT_LABEL": "The treatment you received from the police officers staff during the visit of senior officers",
+    "FEEDBACK_PAGE_RESOLVED_LABEL": "How your doubts complaints were resolved",
+    "FEEDBACK_PAGE_BRIEF_LABEL": "Your feedback if any apart from this",
+    "FEEDBACK_PAGE_BRIEF_PLACE_LABEL": "Enter feedback in brief",
+    "FEEDBACK_PAGE_SELECT_FEEDBACK_TYPE": "Select",
+    "FEEDBACK_PAGE_SUBMIT_BUTTON": "Submit Feedback"
+
+
 
 
 

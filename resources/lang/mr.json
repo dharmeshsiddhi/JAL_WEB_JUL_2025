@@ -875,6 +875,21 @@
     "GRADATION_LIST_PAGE_FORM_YEAR_LABEL": "वर्ष",
     "GRADATION_LIST_PAGE_FORM_YEAR_SELECT": "सर्व",
     "HEADER_MENU_POLICE_CORNER_RECRUITMENT": "पोलीस भरती",
-    "HEADER_MENU_POLICE_CORNER_INITIATIVES": "कार्यक्रम आणि उपक्रम"
+    "HEADER_MENU_POLICE_CORNER_INITIATIVES": "कार्यक्रम आणि उपक्रम",
+    
+    "HEADER_MENU_CITIZEN_CHARTER_COMPLAINT": "ई-तक्रार करा",
+    "HEADER_MENU_CITIZEN_CHARTER_FEEDBACK": "माहिती कळवा / अभिप्राय",
+    "FEEDBACK_PAGE_TITLE": "माहिती कळवा / अभिप्राय",
+    "FEEDBACK_PAGE_NOTICE_HEADER": "अस्वीकरण",
+    "FEEDBACK_PAGE_NOTICE_TEXT": "प्रचलित कायद्यानुसार, एखाद्या मोठ्या गुन्ह्याचा एफआयआर (चोरी, घरफोडी, मोटार वाहन चोरी, अपघात, चेन स्नॅचिंग, हल्ला, बलात्कार, खून, खुनाचा प्रयत्न, दरोडा, डकैती, खंडणी इ. यांसारखे दखलपात्र गुन्हे) फक्त होऊ शकतात. पोलीस ठाण्यात नोंद. त्यासाठी तुमच्या जवळच्या पोलिस स्टेशनशी संपर्क साधा. पोलिसांबद्दलच्या अनुभवाची प्रतिक्रिया येथे कळवा. तुमचा अभिप्राय आमच्यासाठी मौल्यवान आहे. कृपया तुमचा प्रामाणिक अभिप्राय देऊन आमच्या सेवा सुधारण्यास मदत करा. प्रदान केलेली सर्व माहिती गोपनीय ठेवली जाईल.",
+    "FEEDBACK_PAGE_CLEANLINESS_LABEL": "भेटीदरम्यान कार्यालय व परिसरात स्वच्छता निटनेटकेपणा वगैरे बाबतचा आपला अभिप्राय",
+    "FEEDBACK_PAGE_FACILITIES_LABEL": "अभ्यागत कक्षामधील पुरविण्यात आलेल्या सोयीसुविधा इत्यादींबाबतचा अभिप्राय",
+    "FEEDBACK_PAGE_TREATMENT_LABEL": "कार्यालयात वरिष्ठांचे भेटीदरम्यान तेथील पोलीस अधिकारी/अमंलदार यांचेकडुन आपणास मिळालेली वागणुक",
+    "FEEDBACK_PAGE_RESOLVED_LABEL": "आपले शंका/तक्रारीचे निरसन कशाप्रकारे करण्यात आले",
+    "FEEDBACK_PAGE_BRIEF_LABEL": "या व्यतिरिक्त आपला अभिप्राय",
+    "FEEDBACK_PAGE_BRIEF_PLACE_LABEL": "आपला अभिप्राय प्रविष्ठ करा",
+    "FEEDBACK_PAGE_SELECT_FEEDBACK_TYPE": "निवडा",
+    "FEEDBACK_PAGE_SUBMIT_BUTTON": "अभिप्राय सबमिट करा"
+
     
 }

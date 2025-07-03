@@ -33,7 +33,6 @@
         @if(count($recruitmentList))
             <div class="row mx-0">
                 <div class="col-md-1"></div>
-                <form id="form1"></form>
                 <div class="col-md-10" id="ajaxResponseData" style="overflow-x:auto;">
                     <table class="table table-hover table-bordered table-responsive-md mt-10">
                         <thead>

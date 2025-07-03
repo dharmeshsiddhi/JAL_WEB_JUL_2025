@@ -117,6 +117,8 @@ Route::get('/useful-websites', [HomeController::class, 'usefulWebsites']);
 
 Route::get('/gradation-list', [HomeController::class, 'gradationList']);
 Route::post('/gradation-list/ajax-paginate-gradation-list', [HomeController::class, 'gradationListPaging']);
+Route::get('/feedback', [HomeController::class, 'feedback']);
+Route::post('/ajax-submit-feedback-Detail', [HomeController::class, 'ajaxSubmitNewFeedbackDetail']);
 
 
 Route::get('/pdf/generate-contact-list', [PDFController::class, 'printDownloadContactList']);

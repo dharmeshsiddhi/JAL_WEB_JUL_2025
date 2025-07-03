@@ -767,6 +767,124 @@ function addAnimation() {
                         });
                     });
                     
+                    // Submit form data via Ajax
+                    $("#feedbackForm").on('submit', function(e){
+                        e.preventDefault();
+                        $("#errorMsgDiv1").html("");
+                        
+                        var ddlTarget = $("#ddlTarget").val();
+
+                        if(ddlTarget == "MR") {
+                            var form_name1 = $("#form_name1").val();
+                            var form_mobile = $("#form_mobile").val();
+                            var form_brief1 = $("#form_brief1").val();
+                            if(form_name1 === '') {
+                                $("#errorMsgDiv1").html('<div class="fade d-flex justify-content-between align-items-center alert alert-danger show"><strong>आपले नाव प्रविष्ठ करा</strong></div>');
+                                document.getElementById("form_name1").focus();
+                                e.preventDefault();
+                                $('html, body').animate({
+                                    scrollTop: $('#errorMsgDiv1').offset().top - 70 //#DIV_ID is an example. Use the id of your destination on the page
+                                }, 'slow');
+                                return;
+                            }
+                            if(form_mobile === '') {
+                                $("#errorMsgDiv1").html('<div class="fade d-flex justify-content-between align-items-center alert alert-danger show"><strong>मोबाईल नंबर प्रविष्ठ करा</strong></div>');
+                                document.getElementById("form_mobile").focus();
+                                e.preventDefault();
+                                $('html, body').animate({
+                                    scrollTop: $('#errorMsgDiv1').offset().top - 70 //#DIV_ID is an example. Use the id of your destination on the page
+                                }, 'slow');
+                                return;
+                            }
+                            if(form_mobile.length !== 10) {
+                                $("#errorMsgDiv1").html('<div class="fade d-flex justify-content-between align-items-center alert alert-danger show"><strong>१० अंकी मोबाईल नंबर टाका</strong></div>');
+                                document.getElementById("form_mobile").focus();
+                                e.preventDefault();
+                                $('html, body').animate({
+                                    scrollTop: $('#errorMsgDiv1').offset().top - 70 //#DIV_ID is an example. Use the id of your destination on the page
+                                }, 'slow');
+                                return;
+                            }
+                            if(form_brief1 === '') {
+                                $("#errorMsgDiv1").html('<div class="fade alert alert-danger show"><strong>आपला अभिप्राय प्रविष्ठ करा</strong></div>');
+                                document.getElementById("form_brief1").focus();
+                                e.preventDefault();
+                                $('html, body').animate({
+                                    scrollTop: $('#errorMsgDiv1').offset().top - 70 //#DIV_ID is an example. Use the id of your destination on the page
+                                }, 'slow');
+                                return;
+                            }
+                        } else {
+                            var form_name = $("#form_name").val();
+                            var form_mobile = $("#form_mobile").val();
+                            var form_brief = $("#form_brief").val();
+                            if(form_name === '') {
+                                $("#errorMsgDiv1").html('<div class="fade d-flex justify-content-between align-items-center alert alert-danger show"><strong>Enter your name</strong></div>');
+                                document.getElementById("form_name").focus();
+                                e.preventDefault();
+                                $('html, body').animate({
+                                    scrollTop: $('#errorMsgDiv1').offset().top - 70 //#DIV_ID is an example. Use the id of your destination on the page
+                                }, 'slow');
+                                return;
+                            }
+                            if(form_mobile === '') {
+                                $("#errorMsgDiv1").html('<div class="fade d-flex justify-content-between align-items-center alert alert-danger show"><strong>Enter mobile number</strong></div>');
+                                document.getElementById("form_mobile").focus();
+                                e.preventDefault();
+                                $('html, body').animate({
+                                    scrollTop: $('#errorMsgDiv1').offset().top - 70 //#DIV_ID is an example. Use the id of your destination on the page
+                                }, 'slow');
+                                return;
+                            }
+                            if(form_mobile.length !== 10) {
+                                $("#errorMsgDiv1").html('<div class="fade d-flex justify-content-between align-items-center alert alert-danger show"><strong>Enter 10 digit mobile number</strong></div>');
+                                document.getElementById("form_mobile").focus();
+                                e.preventDefault();
+                                $('html, body').animate({
+                                    scrollTop: $('#errorMsgDiv1').offset().top - 70 //#DIV_ID is an example. Use the id of your destination on the page
+                                }, 'slow');
+                                return;
+                            }
+                            if(form_brief === '') {
+                                $("#errorMsgDiv1").html('<div class="fade alert alert-danger show"><strong>Enter feedback details in breif</strong></div>');
+                                document.getElementById("form_brief").focus();
+                                e.preventDefault();
+                                $('html, body').animate({
+                                    scrollTop: $('#errorMsgDiv1').offset().top - 70 //#DIV_ID is an example. Use the id of your destination on the page
+                                }, 'slow');
+                                return;
+                            }
+                        }
+                        
+                        $.ajax({
+                            type: 'POST',
+                            url: '/ajax-submit-feedback-Detail',
+                            data: new FormData(this),
+                            dataType: 'json',
+                            contentType: false,
+                            cache: false,
+                            processData:false,
+                            beforeSend: function(){
+                                $(".ajaxLoader").show();
+                                $('#submitBtnId1').attr("disabled","disabled");
+                            },
+                            success: function(response){
+                                $(".ajaxLoader").hide();
+                                $('#errorMsgDiv1').html('');
+                                if(response.status == 1){
+                                    $('#feedbackForm')[0].reset();
+                                    $('#errorMsgDiv1').html('<div class="fade alert alert-success show">'+response.message+'</div>');
+                                }else{
+                                    $('#errorMsgDiv1').html('<div class="fade alert alert-danger show">'+response.message+'</div>');
+                                }
+                                $('html, body').animate({
+                                    scrollTop: $('#errorMsgDiv1').offset().top - 70 //#DIV_ID is an example. Use the id of your destination on the page
+                                }, 'slow');
+                                $("#submitBtnId1").removeAttr("disabled");
+                            }
+                        });
+                    });
+                    
                     $("#trackForm").on('submit', function(e){
                         e.preventDefault();
                         $("#errorMsgDiv1").html("");

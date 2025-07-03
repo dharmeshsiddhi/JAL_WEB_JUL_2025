@@ -765,4 +765,17 @@ class MasterModel extends Model
             ->orderBy('MGRD_Name', 'asc')
             ->get();
     }
+
+    /**
+     * Created By: Dharmesh Patil
+     * Created Date: 11 Feb 2024
+     * Code For: this function is used for get active news list
+     */
+    public function getAllActiveFeedbackTypesList() {
+        return DB::table('master_feedback_types')
+            ->select('MFBT_ID','MFBT_Name','MFBT_Status') 
+            ->where('MFBT_Status', 1)
+            ->orderBy('MFBT_Name', 'asc')
+            ->get();
+    }
 }
