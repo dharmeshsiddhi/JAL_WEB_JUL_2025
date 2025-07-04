@@ -19,7 +19,7 @@
                                                 <div class="autocom-box">
                                                 <!-- here list are inserted from javascript -->
                                                 </div>
-                                                <div class="icon search_box_icon"><i class="fa fa-search"></i></div>
+                                                <div class="icon"><i class="fa fa-search"></i></div>
                                             </div>
                                         </li>
                                         <li class="dropdown cog-dropdown">
