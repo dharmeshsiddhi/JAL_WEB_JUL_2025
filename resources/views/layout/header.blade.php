@@ -13,6 +13,16 @@
                                 <div class="col-sm-12 col-md-12 col-lg-12 pl-5 pr-5">
                                     <ul class="right-panel float-right">
                                         <li class="dropdown cog-dropdown">
+                                            <div class="search-input">
+                                                <a href="" target="_blank" hidden></a>
+                                                <input type="text" placeholder="Type to search.." id="search_box_main" name="search_box_main" value="">
+                                                <div class="autocom-box">
+                                                <!-- here list are inserted from javascript -->
+                                                </div>
+                                                <div class="icon"><i class="fa fa-search"></i></div>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown cog-dropdown">
                                             <div class="region region-language-switcher">
                                                 <div id="block-languagedropdownswitcher-2" class="block block-lang-dropdown block-language-dropdown-blocklanguage-interface">
                                                     <form class="lang-dropdown-form lang_dropdown_form clearfix language_interface" id="lang_dropdown_form_lang-dropdown-form" data-drupal-selector="lang-dropdown-form-2" action="/" method="post" accept-charset="UTF-8" data-once="cvJqueryValidate" novalidate="novalidate">

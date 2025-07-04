@@ -1138,6 +1138,144 @@ function addAnimation() {
                     });
                 }
             </script>
+            
+            <script type="text/javascript" src="{{ asset('suggest/js/jquery-ui.min.js') }}"></script>
+            <link rel="stylesheet" href="{{ asset('suggest/css/jquery-ui.min.css') }}" />
+            <script>
+                var courtData = [
+                        {
+                            "url": "/", 
+                            "title_en": "{{ __('HEADER_MENU_HOME') }}",
+                        },
+                        {
+                            "url": "/about-district", 
+                            "title_en": "{!! __('HEADER_MENU_ABOUT_US_ABOUT') !!}",
+                        },
+                        {
+                            "url": "/hall-of-fame", 
+                            "title_en": "{!! __('HEADER_MENU_ABOUT_US_HALL_OF_FAME') !!}",
+                        },
+                        {
+                            "url": "/organization-structure", 
+                            "title_en": "{!! __('HEADER_MENU_ABOUT_US_ORGANIZATION') !!}",
+                        },
+                        {
+                            "url": "/police-map", 
+                            "title_en": "{!! __('HEADER_MENU_ABOUT_US_POLICE_MAP') !!}",
+                        },
+                        {
+                            "url": "/senior-officers", 
+                            "title_en": "{!! __('HEADER_MENU_ABOUT_US_SENIOR') !!}",
+                        },
+                        {
+                            "url": "/police-stations", 
+                            "title_en": "{!! __('HEADER_MENU_ABOUT_US_STATIONS') !!}",
+                        },
+                        {
+                            "url": "/control-room", 
+                            "title_en": "{!! __('HEADER_MENU_SPECIAL_UNIT_CONTROL_ROOM') !!}",
+                        },
+                        {
+                            "url": "/local-crime-branch", 
+                            "title_en": "{!! __('HEADER_MENU_SPECIAL_UNIT_LCB') !!}",
+                        },
+                        {
+                            "url": "/district-special-branch", 
+                            "title_en": "{!! __('HEADER_MENU_SPECIAL_UNIT_DSB') !!}",
+                        },
+                        {
+                            "url": "/cctns", 
+                            "title_en": "{!! __('HEADER_MENU_SPECIAL_UNIT_CCTNS') !!}",
+                        },
+                        {
+                            "url": "/bdds", 
+                            "title_en": "{!! __('HEADER_MENU_SPECIAL_UNIT_BDDS') !!}",
+                        },
+                        {
+                            "url": "/economic-offence-wing", 
+                            "title_en": "{!! __('HEADER_MENU_SPECIAL_UNIT_ECONOMIC') !!}",
+                        },
+                        {
+                            "url": "/traffic-branch", 
+                            "title_en": "{!! __('HEADER_MENU_SPECIAL_UNIT_TRAFFIC_BRANCH') !!}",
+                        },
+                        {
+                            "url": "/press-release", 
+                            "title_en": "{!! __('HEADER_MENU_NEWS_UPDATES_PRESS') !!}",
+                        },
+                        {
+                            "url": "/register-complaint", 
+                            "title_en": "{!! __('HEADER_MENU_CITIZEN_CHARTER_COMPLAINT') !!}",
+                        },
+                        {
+                            "url": "/feedback", 
+                            "title_en": "{!! __('HEADER_MENU_CITIZEN_CHARTER_FEEDBACK') !!}",
+                        },
+                        {
+                            "url": "/cyber-safety", 
+                            "title_en": "{!! __('HEADER_MENU_CITIZEN_CHARTER_CYBER_SAFETY_TIPS') !!}",
+                        },
+                        {
+                            "url": "/women-safety", 
+                            "title_en": "{!! __('HEADER_MENU_CITIZEN_CHARTER_WOMEN_SAFETY_TIPS') !!}",
+                        },
+                        {
+                            "url": "/anti-narcotics", 
+                            "title_en": "{!! __('HEADER_MENU_CITIZEN_CHARTER_ANTI_NARCOTICS') !!}",
+                        },
+                        {
+                            "url": "/useful-websites", 
+                            "title_en": "{!! __('HEADER_MENU_CITIZEN_CHARTER_USEFUL_WEBSITES') !!}",
+                        },
+                        {
+                            "url": "/scheduled-cast-tribe", 
+                            "title_en": "{!! __('HEADER_MENU_CITIZEN_CHARTER_OFFENCE_ACTS') !!}",
+                        },
+                        {
+                            "url": "/gradation-list", 
+                            "title_en": "{!! __('HEADER_MENU_POLICE_CORNER_GRADATION_LIST') !!}",
+                        },
+                        {
+                            "url": "/recruitments", 
+                            "title_en": "{!! __('HEADER_MENU_POLICE_CORNER_RECRUITMENT') !!}",
+                        },
+                        {
+                            "url": "/initiatives", 
+                            "title_en": "{!! __('HEADER_MENU_POLICE_CORNER_INITIATIVES') !!}",
+                        },
+                        {
+                            "url": "/photo-gallery", 
+                            "title_en": "{!! __('HEADER_MENU_PHOTO_GALLERY') !!}",
+                        },
+                        {
+                            "url": "/contact-us", 
+                            "title_en": "{!! __('HEADER_MENU_CONTACT_US') !!}",
+                        }
+                    ];
+
+                    $('#search_box_main').autocomplete({
+                        source: function (request, response) {
+                            var courtdatamap = courtData.map(function(i) {
+                                return {
+                                    label: i.title_en,
+                                    value: i.title_en,
+                                    url: i.url
+                                }
+                            });
+                            var key = request.term;
+                            courtdatamap = courtdatamap.filter(function(i) {
+                            return i.label.toLowerCase().indexOf(key.toLowerCase()) >= 0;
+                            });
+                            response(courtdatamap);
+                        },
+                        autoFocus: true,
+                        minLength: 1,
+                        select: function (event, ui) {
+                            // console.log(ui.item.url);
+                            window.location.href = ui.item.url;
+                        }
+                    });
+            </script>
         </div>
     </body>
 </html>

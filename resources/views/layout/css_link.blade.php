@@ -41,6 +41,82 @@
             .homeBannerSlider .slick-slide:first-child .bannerQuote {
                 display: none;
             }
+            .search-input{
+                background: #fff;
+                width: 650px;
+                border-radius: 5px;
+                position: relative;
+                box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+            }
+            @media only screen and (max-width: 480px){	
+                .search-input{
+                    width: 250px;
+                }
+            }
+
+            .search-input input{
+                height: 30px;
+                width: 100%;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                padding: 0 60px 0 20px;
+                font-size: 15px;
+                box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+            }
+
+            .search-input.active input{
+                border-radius: 5px 5px 0 0;
+            }
+
+            .search-input .autocom-box{
+                padding: 0;
+                opacity: 0;
+                pointer-events: none;
+                max-height: 280px;
+                overflow-y: auto;
+                position: absolute;
+                background: #EFF5F5;
+                width: 100%;
+                margin-top: 2px;
+                border-radius: 5px;
+            }
+
+            .search-input.active .autocom-box{
+                padding: 10px 8px;
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .autocom-box li{
+                list-style: none;
+                padding: 10px 12px !important;
+                display: none;
+                width: 100%;
+                cursor: default;
+                border-radius: 3px;
+                border-right: 0px !important;
+            }
+
+            .search-input.active .autocom-box li{
+                display: block;
+            }
+            .autocom-box li:hover{
+                background: #D6E4E5;
+            }
+
+            .search-input .icon{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                height: 30px;
+                width: 30px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 20px;
+                color: #644bff;
+                cursor: pointer;
+            }
         </style>
         @yield('inlineStyle')
     </head>

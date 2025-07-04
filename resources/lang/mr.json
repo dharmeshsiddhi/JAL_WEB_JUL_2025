@@ -872,7 +872,7 @@
     "PRESS_PAGE_FORM_YEAR_LABEL": "वर्ष",
     "PRESS_PAGE_FORM_YEAR_SELECT": "सर्व",
     "PRESS_PAGE_FORM_BUTTON": "शोधा",
-
+    
     "HEADER_MENU_POLICE_CORNER": "पोलीस कॉर्नर",
     "HEADER_MENU_POLICE_CORNER_GRADATION_LIST": "सेवाजेष्ठता यादी",
     "GRADATION_LIST_PAGE_TITLE": "सेवाजेष्ठता यादी",
@@ -896,6 +896,4 @@
     "FEEDBACK_PAGE_BRIEF_PLACE_LABEL": "आपला अभिप्राय प्रविष्ठ करा",
     "FEEDBACK_PAGE_SELECT_FEEDBACK_TYPE": "निवडा",
     "FEEDBACK_PAGE_SUBMIT_BUTTON": "अभिप्राय सबमिट करा"
-
-    
 }
