@@ -121,6 +121,7 @@ Route::get('/feedback', [HomeController::class, 'feedback']);
 Route::post('/ajax-submit-feedback-Detail', [HomeController::class, 'ajaxSubmitNewFeedbackDetail']);
 Route::get('/sitemap', [HomeController::class, 'sitemap']);
 Route::get('/disclaimer', [HomeController::class, 'disclaimer']);
+Route::get('/faqs', [HomeController::class, 'faqs']);
 
 
 Route::get('/pdf/generate-contact-list', [PDFController::class, 'printDownloadContactList']);

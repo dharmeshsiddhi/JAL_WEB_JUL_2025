@@ -215,6 +215,9 @@
                                                                     <li class="dropdown-item level-1">
                                                                         <a href="/PDF/Offence-Details-V13-ADG-Office.pdf" target="_blank" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_TRAFFIC_FINES') }}</a>
                                                                     </li>
+                                                                    <li class="dropdown-item level-1">
+                                                                        <a href="/faqs" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_FAQ') }}</a>
+                                                                    </li>
                                                                 </ul>
                                                             </li>
                                                             <li class="nav-item level-0 dropdown">
