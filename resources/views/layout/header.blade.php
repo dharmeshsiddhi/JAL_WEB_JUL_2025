@@ -19,7 +19,7 @@
                                                 <div class="autocom-box">
                                                 <!-- here list are inserted from javascript -->
                                                 </div>
-                                                <div class="icon"><i class="fa fa-search"></i></div>
+                                                <div class="icon search_box_icon"><i class="fa fa-search"></i></div>
                                             </div>
                                         </li>
                                         <li class="dropdown cog-dropdown">
@@ -117,7 +117,7 @@
                                                                 <a href="/" data-drupal-link-system-path="<front>" class="is-active" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_HOME') }}</a>
                                                             </li>
                                                             <li class="nav-item level-0 dropdown">
-                                                                <a href="javascript:void(0);" class="nav-link has-submenu" id="sm-17149963338979644-1" aria-haspopup="true" aria-controls="sm-17149963338979644-2" aria-expanded="false" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_ABOUT_US_ABOUT') }}</a>
+                                                                <a href="javascript:void(0);" class="nav-link has-submenu" id="sm-17149963338979644-1" aria-haspopup="true" aria-controls="sm-17149963338979644-2" aria-expanded="false" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_ABOUT_US') }}</a>
                                                                 <ul class="dropdown-menu sm-nowrap" id="sm-17149963338979644-2" role="group" aria-hidden="true" aria-labelledby="sm-17149963338979644-1" aria-expanded="false" style="width: auto; min-width: 10em; display: none; max-width: 20em; top: auto; left: 0px; margin-left: 0px; margin-top: 0px;">
                                                                     <li class="dropdown-item level-1">
                                                                         <a href="/about-district" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_ABOUT_US_ABOUT') }}</a>
@@ -207,7 +207,7 @@
                                                                         <a href="/scheduled-cast-tribe" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_OFFENCE_ACTS') }}</a>
                                                                     </li>
                                                                     <li class="dropdown-item level-1">
-                                                                        <a href="/PDF/RTI_POINT_17.pdf" target="blank" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_RIGHT_TO_INFORMATION') }}</a>
+                                                                        <a href="/PDF/RTI_17_POINT_01_JAN_2025.pdf" target="blank" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_RIGHT_TO_INFORMATION') }}</a>
                                                                     </li>
                                                                     <li class="dropdown-item level-1">
                                                                         <a href="https://parivahan.gov.in/parivahan//en/content/act-rules-and-policies" class="external" target="_blank" style="font-size: 14px;font-weight:600;">{{ __('HEADER_MENU_CITIZEN_CHARTER_TRAFFIC_RULES') }}</a>

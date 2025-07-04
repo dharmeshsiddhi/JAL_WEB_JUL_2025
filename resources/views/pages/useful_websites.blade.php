@@ -90,6 +90,11 @@
                             <td><a target="_blank" rel="noopener noreferrer" href="https://www.mahapolice.gov.in/" class="click-btn btn-style905"><i class="fa fa-link"></i></a></td>
                         </tr>
                         <tr>
+                            <td class="text-center"><img class="bottomLogo zoom-custom" style="height:35px;margin-right:0;" src="{{ asset('useful/acb.jpeg') }}" alt="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}" title="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}"></td>
+                            <td class="v-center">{{ __('USEFUL_WEBSITES_PAGE_TABLE_ANTI_CORRUPTION') }}</td>
+                            <td><a target="_blank" rel="noopener noreferrer" href="https://acbmaharashtra.gov.in/" class="click-btn btn-style905"><i class="fa fa-link"></i></a></td>
+                        </tr>
+                        <tr>
                             <td class="text-center"><img class="bottomLogo zoom-custom" style="height:35px;margin-right:0;" src="{{ asset('useful/cybercrime.png') }}" alt="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}" title="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}"></td>
                             <td class="v-center">{{ __('USEFUL_WEBSITES_PAGE_TABLE_CYBER_REPORTING') }}</td>
                             <td><a target="_blank" rel="noopener noreferrer" href="https://cybercrime.gov.in/" class="click-btn btn-style905"><i class="fa fa-link"></i></a></td>
@@ -213,6 +218,26 @@
                             <td class="text-center"><img class="bottomLogo zoom-custom" style="height:35px;margin-right:0;" src="{{ asset('useful/mahapolice.png') }}" alt="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}" title="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}"></td>
                             <td class="v-center">{{ __('USEFUL_WEBSITES_PAGE_TABLE_NDB_POLICE') }}</td>
                             <td><a target="_blank" rel="noopener noreferrer" href="https://nandurbar.mahapolice.gov.in/" class="click-btn btn-style905"><i class="fa fa-link"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><img class="bottomLogo zoom-custom" style="height:35px;margin-right:0;" src="{{ asset('useful/mahapolice.png') }}" alt="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}" title="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}"></td>
+                            <td class="v-center">{{ __('USEFUL_WEBSITES_PAGE_TABLE_NASHIK_CITY_POLICE') }}</td>
+                            <td><a target="_blank" rel="noopener noreferrer" href="https://nashikcitypolice.gov.in/" class="click-btn btn-style905"><i class="fa fa-link"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><img class="bottomLogo zoom-custom" style="height:35px;margin-right:0;" src="{{ asset('useful/mahapolice.png') }}" alt="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}" title="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}"></td>
+                            <td class="v-center">{{ __('USEFUL_WEBSITES_PAGE_TABLE_NASHIK_RURAL_POLICE') }}</td>
+                            <td><a target="_blank" rel="noopener noreferrer" href="https://www.nashikruralpolice.gov.in/" class="click-btn btn-style905"><i class="fa fa-link"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><img class="bottomLogo zoom-custom" style="height:35px;margin-right:0;" src="{{ asset('useful/mahapolice.png') }}" alt="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}" title="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}"></td>
+                            <td class="v-center">{{ __('USEFUL_WEBSITES_PAGE_TABLE_NAGAR_POLICE') }}</td>
+                            <td><a target="_blank" rel="noopener noreferrer" href="https://www.ahmednagardistpolice.gov.in/" class="click-btn btn-style905"><i class="fa fa-link"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><img class="bottomLogo zoom-custom" style="height:35px;margin-right:0;" src="{{ asset('useful/collector.png') }}" alt="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}" title="{{ __('USEFUL_WEBSITES_PAGE_TABLE_MAHA_POLICE') }}"></td>
+                            <td class="v-center">{{ __('USEFUL_WEBSITES_PAGE_TABLE_JAL_COLLECTOR') }}</td>
+                            <td><a target="_blank" rel="noopener noreferrer" href="https://jalgaon.gov.in/" class="click-btn btn-style905"><i class="fa fa-link"></i></a></td>
                         </tr>
                     </tbody>
                 </table>

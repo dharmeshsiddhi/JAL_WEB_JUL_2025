@@ -1276,6 +1276,27 @@ function addAnimation() {
                         }
                     });
             </script>
+            <script>
+                const searchWrapper = document.querySelector(".search-input");
+                const inputBox = searchWrapper.querySelector("#search_box_main");
+                const icon = searchWrapper.querySelector(".search_box_icon");
+                let linkTag = searchWrapper.querySelector("a");
+                let webLink;
+
+                // if user press any key and release
+                inputBox.onkeyup = (e)=>{
+                    let userData = e.target.value; //user enetered data
+                    if(userData){
+                        icon.onclick = ()=>{
+                            webLink = `/site-search/${userData}`;
+                            linkTag.setAttribute("href", webLink);
+                            linkTag.click();
+                        }
+                    }else{
+                        searchWrapper.classList.remove("active"); //hide autocomplete box
+                    }
+                }
+            </script>
         </div>
     </body>
 </html>

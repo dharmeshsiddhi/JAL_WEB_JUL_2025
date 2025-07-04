@@ -36,6 +36,7 @@
     --clr-neutral-700: hsl(213, 22%, 20%);
     --clr-neutral-800: hsl(212, 21%, 14%);
     --clr-neutral-900: hsl(213, 22%, 8%);
+    --bs-dark-rgb: 33, 37, 41;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -17921,3 +17922,102 @@ section.Importanlink {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
         background-color: #555;
     }
+
+    /* Sitemap Page */
+    .text_org {
+        color: var(--themecolor5);
+        font-size: 1.25rem;
+    }
+    .content_body1 ul {
+        padding-left: 10px;
+    }
+    .content_body1 .li-parent1 {
+        background: url(../images/arrow.png) no-repeat left 4px;
+        padding: 5px 0 15px 24px;
+        background-size: 18px;
+        text-align: justify;
+        list-style: none;
+        display: table;
+        line-height: 20px;
+    }
+    
+    .content_body1 .li-parent2 {
+        background: url(../images/arrow1.png) no-repeat left 0px;
+        padding: 0px 0px 15px 23px;
+        text-align: justify;
+        background-size: 18px;
+        display: table;
+        list-style: none;
+        line-height: 20px;
+    }
+    .sitemap a {
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        --ms-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .sitemap a:hover {
+        color: var(--themecolor5) !important;
+        padding-left: 10px;
+    }
+    .content_body1 li p {
+        margin-bottom: 0
+    }
+
+    .content_body1 ul li ul {
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    .text-dark {
+        --bs-text-opacity: 1;
+        color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity)) !important
+    }
+
+
+    /*  Disclaimer Page */
+
+    .disclaimer .info-box {
+    color: #313030;
+    padding: 20px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px -6px rgb(0 0 0 / 70%);
+  }
+  
+  .disclaimer .info-box i {
+    font-size: 32px;
+    color: #ff5821;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #ffded4;
+    float: left;
+  }
+  .disclaimer .info-box:hover {
+      box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+  }
+  
+  .disclaimer .info-box h3 {
+  font-family: 'Poppins','sans-serif';
+    font-size: 20px;
+    color: var(--themecolor5);
+    font-weight: 700;
+    margin: 10px 0 10px 20px;
+  }
+  .disclaimer .info-box h4 {
+  font-family: 'Poppins','sans-serif';
+    font-size: 16px;
+    color: var(--themecolor5);
+    font-weight: 700;
+    margin: 10px 0 10px 20px;
+  }
+  
+  .disclaimer .info-box p {
+  font-family: 'Poppins','sans-serif';
+    padding: 0;
+    line-height: 24px;
+    font-size: 15px;
+    margin: 20px 20px 20px 20px;
+  }

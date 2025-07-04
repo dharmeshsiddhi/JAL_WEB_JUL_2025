@@ -226,6 +226,34 @@
                                     </div>
                                 </div>
                             </div>
+                            <section class="p-0 has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-6aa89fb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6aa89fb" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-250e85d" data-id="250e85d" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-396bb8e elementor-align-left elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="396bb8e" data-element_type="widget" data-widget_type="icon-list.default">
+                                                <div class="elementor-widget-container">
+                                                    <ul class="elementor-icon-list-items">
+                                                        <li class="elementor-icon-list-item">
+                                                            <a href="/sitemap">
+                                                            <span class="elementor-icon-list-icon">
+                                                            <i aria-hidden="true" class="fa fa-caret-right"></i>						</span>
+                                                            <span class="elementor-icon-list-text">{{ __('FOOTER_EXTRA_LINKS_SITEMAP') }}</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="elementor-icon-list-item">
+                                                            <a href="/disclaimer">
+                                                            <span class="elementor-icon-list-icon">
+                                                            <i aria-hidden="true" class="fa fa-caret-right"></i>						</span>
+                                                            <span class="elementor-icon-list-text">{{ __('FOOTER_EXTRA_LINKS_DISCLAIMER') }}</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
